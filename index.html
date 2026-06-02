@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>WiSE · Active — Sage Active across France, Spain, Germany &amp; Portugal (Confidential)</title>
-<meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="Confidential WiSE demo hub — Sage Active country concepts for France, Spain, Germany and Portugal.">
-<meta property="og:title" content="WiSE · Active — Sage Active across France, Spain, Germany &amp; Portugal">
-<meta property="og:description" content="Confidential WiSE hub: four country demos, a live-estate Current State review, and the Active playbook.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#00402a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300402a'/%3E%3Cpath d='M11 3l1.4 3.4L16 8l-3.6 1.6L11 13l-1.4-3.4L6 8l3.6-1.6z' fill='%2300D639'/%3E%3Ctext x='16' y='25' font-family='Arial,sans-serif' font-size='13' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta content="noindex, nofollow, noarchive" name="robots"/>
+<meta content="Confidential WiSE demo hub — Sage Active country concepts for France, Spain, Germany and Portugal." name="description"/>
+<meta content="WiSE · Active — Sage Active across France, Spain, Germany &amp; Portugal" property="og:title"/>
+<meta content="Confidential WiSE hub: four country demos, a live-estate Current State review, and the Active playbook." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="#00402a" name="theme-color"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300402a'/%3E%3Cpath d='M11 3l1.4 3.4L16 8l-3.6 1.6L11 13l-1.4-3.4L6 8l3.6-1.6z' fill='%2300D639'/%3E%3Ctext x='16' y='25' font-family='Arial,sans-serif' font-size='13' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800;900&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --font-head:"Sage Headline","Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
@@ -425,932 +426,879 @@
   /* Scroll reveal (progressive enhancement, added by JS) */
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
+
+  /* Language toggle */
+  .subnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .langtog{display:flex;gap:4px;background:var(--grey-bg);padding:4px;border-radius:30px;border:1px solid var(--line);flex:0 0 auto}
+  .lt{font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:.01em;color:var(--muted);padding:7px 14px;border-radius:24px;cursor:pointer;border:none;background:transparent;transition:all .18s;white-space:nowrap}
+  .lt:hover{color:var(--ink)}
+  .lt.active{background:#fff;color:var(--green-900);box-shadow:var(--shadow)}
+  @media(max-width:640px){ .subnav .wrap{gap:8px} .lt{padding:7px 11px;font-size:12.5px} }
 </style>
 </head>
 <body>
-
 <div class="ribbon">CONFIDENTIAL — WiSE programme demo hub · concept product pages · <b>not for publication</b></div>
 <div class="promo" id="promo">Flash offer: <b>−50%</b> for the first 3 months on Sage Active · until 30/06/2026</div>
-
 <header class="nav" id="nav">
-  <div class="wrap nav-inner">
-    <div class="brand">
-      <span class="logomark" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#00402a"/><path d="M16 6l2.1 5.4L23 13l-4.9 1.6L16 20l-2.1-5.4L9 13l4.9-1.6z" fill="#00D639"/></svg></span>
-      <span class="logo">Sage</span><span class="sep"></span>
-      <span class="prod">WiSE&nbsp;·&nbsp;<em>Active</em></span>
-    </div>
-    <div class="ptabs" role="tablist">
-      <button class="ptab active" data-v="demos">Demos</button>
-      <button class="ptab" data-v="review">Current State</button>
-      <button class="ptab" data-v="playbook">Playbook</button>
-    </div>
-    <a href="#" class="btn btn-green nav-cta" id="navcta">Essai gratuit <span class="arr">→</span></a>
-  </div>
-  <div class="subnav" id="subnav">
-    <div class="wrap">
-      <div class="tabs" role="tablist">
-        <button class="tab active" data-c="fr"><span class="flag">FR</span>France</button>
-        <button class="tab" data-c="es"><span class="flag">ES</span>España</button>
-        <button class="tab" data-c="de"><span class="flag">DE</span>Deutschland</button>
-        <button class="tab" data-c="pt"><span class="flag">PT</span>Portugal</button>
-      </div>
-    </div>
-  </div>
+<div class="wrap nav-inner">
+<div class="brand">
+<span aria-hidden="true" class="logomark"><svg height="30" viewbox="0 0 32 32" width="30"><rect fill="#00402a" height="32" rx="8" width="32"></rect><path d="M16 6l2.1 5.4L23 13l-4.9 1.6L16 20l-2.1-5.4L9 13l4.9-1.6z" fill="#00D639"></path></svg></span>
+<span class="logo">Sage</span><span class="sep"></span>
+<span class="prod">WiSE · <em>Active</em></span>
+</div>
+<div class="ptabs" role="tablist">
+<button class="ptab active" data-v="demos">Demos</button>
+<button class="ptab" data-v="review">Current State</button>
+<button class="ptab" data-v="playbook">Playbook</button>
+</div>
+<a class="btn btn-green nav-cta" href="#" id="navcta">Essai gratuit <span class="arr">→</span></a>
+</div>
+<div class="subnav" id="subnav">
+<div class="wrap">
+<div class="tabs" role="tablist">
+<button class="tab active" data-c="fr"><span class="flag">FR</span>France</button>
+<button class="tab" data-c="es"><span class="flag">ES</span>España</button>
+<button class="tab" data-c="de"><span class="flag">DE</span>Deutschland</button>
+<button class="tab" data-c="pt"><span class="flag">PT</span>Portugal</button>
+</div>
+<div aria-label="Language" class="langtog" role="tablist"><button class="lt active" data-l="native" id="lt-native">Français</button><button class="lt" data-l="en">English</button></div></div>
+</div>
 </header>
-
 <main>
 <div class="view active" id="view-demos">
-
 <!-- ============================ FRANCE ============================ -->
-<div class="panel active" id="panel-fr" lang="fr">
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow anim d1"><span class="dot"></span>France · Échéance 1ᵉʳ septembre 2026</span>
-        <h1 class="anim d2">La facture électronique arrive. <em>Soyez prêt</em>, sans rien changer.</h1>
-        <p class="lead anim d3">Sage Active réunit facturation, comptabilité, paie et RH dans une seule solution en ligne — avec la <b>plateforme agréée Sage</b> intégrée nativement. Vous recevez et émettez vos factures électroniques en conformité, dès aujourd'hui.</p>
-        <div class="cta-row anim d4">
-          <a href="#" class="btn btn-green">Essayez un mois gratuit <span class="arr">→</span></a>
-          <a href="#clock-fr" class="btn btn-ghost">Comprendre l'échéance 2026</a>
-        </div>
-        <div class="chips anim d5">
-          <span class="chip">Factur-X</span><span class="chip">UBL</span><span class="chip">CII</span><span class="chip">EN 16931</span><span class="chip">Plateforme agréée Sage</span>
-        </div>
-        <p class="reassure anim d5">Sans engagement · Résiliable à tout moment · <b>−50%</b> les 3 premiers mois</p>
-      </div>
-      <div class="mock anim d3" aria-hidden="true">
-        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Rechercher…</span><span class="app-ava">LV</span></div>
-        <div class="app-body">
-          <div class="app-rail">
-            <span class="ri active"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></span>
-            <span class="ri spark"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></span>
-          </div>
-          <div class="app-main">
-            <div class="app-h">Factures de vente <span class="app-cta">+ Facture</span></div>
-            <div class="app-kpis">
-              <div class="kpi"><span class="kl">Encaissé · 30j</span><span class="kv">12 480 €</span><span class="kd up">▲ 14%</span></div>
-              <div class="kpi"><span class="kl">En attente</span><span class="kv">4 805 €</span><span class="kd down">2 échues</span></div>
-              <div class="kpi"><span class="kl">Échéance 7j</span><span class="kv">3 fact.</span><span class="kd up">à relancer</span></div>
-            </div>
-            <div class="app-table">
-              <div class="thead"><span>Client</span><span>Montant</span><span>Statut</span></div>
-              <div class="doc-row"><span class="cust">Boulangerie Lévêque</span><span class="amt">1 240,00 €</span><span class="st paid">Payée</span></div>
-              <div class="doc-row"><span class="cust">Atelier Mercier SARL</span><span class="amt">3 880,50 €</span><span class="st sent">Émise · e-facture</span></div>
-              <div class="doc-row"><span class="cust">Cabinet Rousseau</span><span class="amt">925,00 €</span><span class="st draft">Brouillon</span></div>
-            </div>
-            <div class="ai"><span class="pill">Copilot</span><span>3 factures arrivent à échéance cette semaine. Voulez-vous relancer <b>Cabinet Rousseau</b> ?</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap trust-inner">
-      <div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· avis clients (illustratif)</span></div>
-      <div class="trust-metrics">
-        <div class="tm"><b>−50%</b><span>3 premiers mois</span></div>
-        <div class="tm"><b>2026/27</b><span>prêt e-facture</span></div>
-        <div class="tm"><b>4×</b><span>+ rapide (notes de frais)</span></div>
-      </div>
-      <div class="trust-badges"><span class="tb">RGPD</span><span class="tb">Plateforme agréée</span><span class="tb">Factur-X · EN 16931</span></div>
-    </div>
-  </section>
-
-  <section class="sec why">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Pourquoi Sage Active</span><h2>Ce qui nous distingue</h2></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>La PA, nativement intégrée</h3><p>Émission, réception et e-reporting depuis votre solution — sans portail tiers ni logiciel séparé.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>Tout-en-un, du devis à la paie</h3><p>Facturation, comptabilité, paie et RH dans une plateforme reliée — fini les outils qui ne se parlent pas.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></div><h3>IA Copilot incluse</h3><p>L'assistant qui automatise les tâches et répond à vos questions — compris dans l'abonnement.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clock" id="clock-fr">
-    <div class="wrap">
-      <span class="eyebrow on-dark"><span class="dot"></span>Réforme de la facture électronique</span>
-      <h2>Deux dates. Une seule chose à faire : être prêt.</h2>
-      <p class="sub">À partir de septembre 2026, la facture électronique B2B devient obligatoire en France, transmise via une plateforme agréée (PA). Sage est immatriculée comme PA, intégrée nativement à Sage Active — sans logiciel ni portail tiers.</p>
-      <div class="timeline">
-        <div class="tl now"><span class="tag">Maintenant</span><div class="date">1ᵉʳ sept. 2026</div><div class="who">Toutes les entreprises</div><p>Obligation de <b>recevoir</b> les factures électroniques. Grandes entreprises et ETI doivent aussi les <b>émettre</b> et e-reporter.</p></div>
-        <div class="tl"><div class="date">1ᵉʳ sept. 2027</div><div class="who">PME · TPE · micro</div><p>Obligation d'<b>émettre</b> les factures au format structuré (Factur-X, UBL, CII).</p></div>
-        <div class="tl"><div class="date">La réponse Sage</div><div class="who">PA intégrée</div><p>Émission, réception et e-reporting depuis Sage Active. C'est déjà dans votre solution.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Offres</span><h2>Trouvez la bonne solution</h2><p class="lead">Prise en main accompagnée, assistance illimitée. Ajoutez des utilisateurs ou résiliez à tout moment.</p></div>
-      <div class="tiers">
-        <div class="tier">
-          <span class="badge">Starter avec IA</span><h3>Sage Active Starter</h3>
-          <p class="desc">Votre facturation en ligne avec l'IA, pour les petites entreprises et leur expert-comptable.</p>
-          <div class="price">25&nbsp;€<small> /mois HT</small></div><div class="promo-line">12,50&nbsp;€/mois les 3 premiers mois</div>
-          <div class="meta">1 entreprise · 5 utilisateurs inclus</div>
-          <ul><li>Devis et factures en un clic</li><li>Facture électronique via la PA Sage</li><li>Suivi des paiements en cours</li><li>Rapprochement bancaire simplifié</li><li>Rapports en temps réel</li><li>Collaboration avec l'expert-comptable</li></ul>
-          <a href="#" class="btn btn-ghost">Essayer un mois gratuit</a>
-        </div>
-        <div class="tier feat">
-          <span class="badge">Essentials avec IA · le plus complet</span><h3>Sage Active Essentials</h3>
-          <p class="desc">Votre solution tout-en-un de gestion dans le Cloud, pour les entreprises qui gèrent leur comptabilité.</p>
-          <div class="price">49&nbsp;€<small> /mois HT</small></div><div class="promo-line">24,50&nbsp;€/mois les 3 premiers mois</div>
-          <div class="meta">1 entreprise · 10 utilisateurs · 1 salarié inclus</div>
-          <ul><li class="head-li">Tout Sage Active Starter, plus :</li><li>Comptabilité tenue et automatisée</li><li>États comptables en temps réel</li><li>Calcul et déclaration de la TVA</li><li>Reporting financier annuel</li><li class="new">Nouveau ! Paie et RH intégrées</li></ul>
-          <a href="#" class="btn btn-green">Acheter à −50% <span class="arr">→</span></a>
-        </div>
-      </div>
-      <p class="tier-note">Disponible en France métropolitaine, en Corse (taux normal) et dans les DOM concernés. Carte de crédit requise. Promotion valable jusqu'au 30/06/2026 pour toute nouvelle souscription : −50% les 3 premiers mois, hors TVA.</p>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Fonctionnalités</span><h2>Une seule plateforme, du devis à la paie</h2><p class="lead">Tout est relié, et l'IA s'occupe des tâches répétitives.</p></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div><h3>Devis &amp; factures</h3><p>Créez, dupliquez et convertissez devis en factures. Documents professionnels à votre image.</p></div>
-        <div class="feat-card"><span class="nu">Conformité</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Facture électronique</h3><p>Émettez et recevez vos e-factures via la plateforme agréée Sage, intégrée. Prêt pour 2026 et 2027.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></div><h3>Comptabilité &amp; OCR</h3><p>Saisie automatisée des achats par OCR, écritures générées, audit complet du grand livre.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></div><h3>TVA &amp; clôtures</h3><p>Calculez et déclarez votre TVA, réalisez vos clôtures, préparez votre reporting annuel.</p></div>
-        <div class="feat-card"><span class="nu">Nouveau</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 11h5M18.5 8.5v5"/></svg></div><h3>Paie &amp; RH</h3><p>Gérez la paie et les RH de vos salariés dans la même solution.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"/></svg></div><h3>Sage Copilot</h3><p>L'IA générative qui automatise les tâches complexes et vous conseille.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="copilot">
-    <div class="wrap copilot-grid">
-      <div><span class="eyebrow on-dark"><span class="dot"></span>Intelligence artificielle</span><h2>Sage Copilot, votre assistant de confiance</h2><p>Toujours disponible pour travailler avec vous, vous tenir informé et vous aider à prendre de meilleures décisions. Inclus dans Sage Active.</p><div class="cta-row" style="margin-top:26px"><a href="#" class="btn btn-green">Découvrir Sage Copilot <span class="arr">→</span></a></div></div>
-      <div class="ai-card"><div class="q">Vous demandez :</div><div class="a">« Quelles factures sont en retard ? »</div><div class="q" style="margin-top:18px">Copilot répond :</div><div class="a">2 factures échues pour <b>4 805 €</b>. La plus ancienne — <b>Atelier Mercier</b> — date de 23 jours. Voulez-vous préparer les relances ?</div></div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Paroles de clients</span><h2>Ils gèrent déjà tout depuis Sage Active</h2></div>
-      <div class="quotes">
-        <div class="quote"><div class="stars">★★★★★</div><p>« L'IA de Sage Copilot me donne un assistant de confiance au quotidien. Le tout m'apporte une grande sérénité dans mon métier. »</p><div class="who">Patrick Russo<span>Fondateur, PRussoLive</span></div><div class="real">Témoignage client réel</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>« Mon expert-comptable et moi travaillons sur la même donnée. Les clôtures se font en quelques heures. »</p><div class="who">Gérante<span>TPE de services, Lyon · représentatif</span></div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>« Recevoir et émettre mes factures électroniques sans changer d'outil — exactement ce dont j'avais besoin avant 2026. »</p><div class="who">Dirigeant<span>Bâtiment, Nantes · représentatif</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Écosystème</span><h2>Élargissez Sage Active pour gagner du temps</h2></div>
-      <div class="eco">
-        <div class="eco-card"><div class="nm">N2F</div><div class="role">Notes de frais</div><p>Digitalisez vos frais professionnels — jusqu'à 4× plus rapide.</p></div>
-        <div class="eco-card"><div class="nm">Qotid</div><div class="role">Trésorerie · dès 49 €/mois</div><p>Suivez la rentabilité de votre activité en connectant vos outils.</p></div>
-        <div class="eco-card"><div class="nm">Open-Flux</div><div class="role">Connecteur · dès 600 €/an</div><p>Reliez e-commerce, CRM, GED et PoS à Sage Active.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap"><div class="head center"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>FAQ</span><h2>Questions fréquentes</h2></div>
-      <div class="faq">
-        <details open><summary>Sage Active est-il compatible avec la facture électronique ?</summary><div class="ans">Oui. La plateforme agréée Sage est intégrée nativement : vous émettez, recevez et e-reportez depuis votre solution, sans portail tiers. Vous êtes prêt pour 2026 et 2027.</div></details>
-        <details><summary>À qui s'adresse Sage Active ?</summary><div class="ans">Aux petites entreprises : facturation, comptabilité, et — avec Essentials — paie et RH, le tout optimisé par l'IA.</div></details>
-        <details><summary>Comment fonctionne l'abonnement ?</summary><div class="ans">Mensuel, sans engagement, résiliable à tout moment. −50% les 3 premiers mois jusqu'au 30/06/2026.</div></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="final"><div class="wrap"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>Prêt à démarrer</span><h2>Découvrez la puissance de Sage Active</h2><p class="lead">Essayez un mois gratuitement, ou lancez-vous avec −50% les 3 premiers mois. L'échéance approche — prenez de l'avance.</p><div class="cta-row"><a href="#" class="btn btn-green">Acheter à −50% <span class="arr">→</span></a><a href="#" class="btn btn-ghost">Essayer un mois gratuit</a></div></div></section>
+<div class="panel active" data-nl="fr" id="panel-fr" lang="fr">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow anim d1" data-en='&lt;span class="dot"&gt;&lt;/span&gt;France · 1 September 2026 deadline'><span class="dot"></span>France · Échéance 1ᵉʳ septembre 2026</span>
+<h1 class="anim d2" data-en="E-invoicing is coming. &lt;em&gt;Be ready&lt;/em&gt;, without changing a thing.">La facture électronique arrive. <em>Soyez prêt</em>, sans rien changer.</h1>
+<p class="lead anim d3" data-en="Sage Active brings invoicing, accounting, payroll and HR together in one online solution — with the &lt;b&gt;Sage accredited platform (PA)&lt;/b&gt; built in natively. Receive and issue compliant e-invoices, starting today.">Sage Active réunit facturation, comptabilité, paie et RH dans une seule solution en ligne — avec la <b>plateforme agréée Sage</b> intégrée nativement. Vous recevez et émettez vos factures électroniques en conformité, dès aujourd'hui.</p>
+<div class="cta-row anim d4">
+<a class="btn btn-green" data-en='Try one month free &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Essayez un mois gratuit <span class="arr">→</span></a>
+<a class="btn btn-ghost" data-en="Understand the 2026 deadline" href="#clock-fr">Comprendre l'échéance 2026</a>
 </div>
-
+<div class="chips anim d5">
+<span class="chip">Factur-X</span><span class="chip">UBL</span><span class="chip">CII</span><span class="chip">EN 16931</span><span class="chip">Plateforme agréée Sage</span>
+</div>
+<p class="reassure anim d5" data-en="No commitment · Cancel anytime · &lt;b&gt;−50%&lt;/b&gt; for the first 3 months">Sans engagement · Résiliable à tout moment · <b>−50%</b> les 3 premiers mois</p>
+</div>
+<div aria-hidden="true" class="mock anim d3">
+<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Rechercher…</span><span class="app-ava">LV</span></div>
+<div class="app-body">
+<div class="app-rail">
+<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
+<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
+</div>
+<div class="app-main">
+<div class="app-h">Factures de vente <span class="app-cta">+ Facture</span></div>
+<div class="app-kpis">
+<div class="kpi"><span class="kl">Encaissé · 30j</span><span class="kv">12 480 €</span><span class="kd up">▲ 14%</span></div>
+<div class="kpi"><span class="kl">En attente</span><span class="kv">4 805 €</span><span class="kd down">2 échues</span></div>
+<div class="kpi"><span class="kl">Échéance 7j</span><span class="kv">3 fact.</span><span class="kd up">à relancer</span></div>
+</div>
+<div class="app-table">
+<div class="thead"><span>Client</span><span>Montant</span><span>Statut</span></div>
+<div class="doc-row"><span class="cust">Boulangerie Lévêque</span><span class="amt">1 240,00 €</span><span class="st paid">Payée</span></div>
+<div class="doc-row"><span class="cust">Atelier Mercier SARL</span><span class="amt">3 880,50 €</span><span class="st sent">Émise · e-facture</span></div>
+<div class="doc-row"><span class="cust">Cabinet Rousseau</span><span class="amt">925,00 €</span><span class="st draft">Brouillon</span></div>
+</div>
+<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>3 factures arrivent à échéance cette semaine. Voulez-vous relancer <b>Cabinet Rousseau</b> ?</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="trust">
+<div class="wrap trust-inner">
+<div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· avis clients (illustratif)</span></div>
+<div class="trust-metrics">
+<div class="tm"><b>−50%</b><span>3 premiers mois</span></div>
+<div class="tm"><b>2026/27</b><span>prêt e-facture</span></div>
+<div class="tm"><b>4×</b><span>+ rapide (notes de frais)</span></div>
+</div>
+<div class="trust-badges"><span class="tb">RGPD</span><span class="tb">Plateforme agréée</span><span class="tb">Factur-X · EN 16931</span></div>
+</div>
+</section>
+<section class="sec why">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Why Sage Active'><span class="dot"></span>Pourquoi Sage Active</span><h2 data-en="What sets us apart">Ce qui nous distingue</h2></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></div><h3 data-en="The PA, natively integrated">La PA, nativement intégrée</h3><p data-en="Issuing, receiving and e-reporting from your solution — no third-party portal or separate software.">Émission, réception et e-reporting depuis votre solution — sans portail tiers ni logiciel séparé.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><h3 data-en="All-in-one, from quote to payroll">Tout-en-un, du devis à la paie</h3><p data-en="Invoicing, accounting, payroll and HR in one connected platform — no more tools that don't talk to each other.">Facturation, comptabilité, paie et RH dans une plateforme reliée — fini les outils qui ne se parlent pas.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></div><h3 data-en="Copilot AI included">IA Copilot incluse</h3><p data-en="The assistant that automates tasks and answers your questions — included in your subscription.">L'assistant qui automatise les tâches et répond à vos questions — compris dans l'abonnement.</p></div>
+</div>
+</div>
+</section>
+<section class="clock" id="clock-fr">
+<div class="wrap">
+<span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;E-invoicing reform'><span class="dot"></span>Réforme de la facture électronique</span>
+<h2 data-en="Two dates. One thing to do: be ready.">Deux dates. Une seule chose à faire : être prêt.</h2>
+<p class="sub" data-en="From September 2026, B2B e-invoicing becomes mandatory in France, transmitted via an accredited platform (PA). Sage is registered as a PA, natively integrated into Sage Active — no separate software or third-party portal.">À partir de septembre 2026, la facture électronique B2B devient obligatoire en France, transmise via une plateforme agréée (PA). Sage est immatriculée comme PA, intégrée nativement à Sage Active — sans logiciel ni portail tiers.</p>
+<div class="timeline">
+<div class="tl now"><span class="tag" data-en="Now">Maintenant</span><div class="date">1ᵉʳ sept. 2026</div><div class="who">Toutes les entreprises</div><p data-en="Obligation to &lt;b&gt;receive&lt;/b&gt; e-invoices. Large companies and mid-caps must also &lt;b&gt;issue&lt;/b&gt; them and e-report.">Obligation de <b>recevoir</b> les factures électroniques. Grandes entreprises et ETI doivent aussi les <b>émettre</b> et e-reporter.</p></div>
+<div class="tl"><div class="date">1ᵉʳ sept. 2027</div><div class="who">PME · TPE · micro</div><p data-en="Obligation to &lt;b&gt;issue&lt;/b&gt; invoices in a structured format (Factur-X, UBL, CII).">Obligation d'<b>émettre</b> les factures au format structuré (Factur-X, UBL, CII).</p></div>
+<div class="tl"><div class="date">La réponse Sage</div><div class="who">PA intégrée</div><p data-en="Issuing, receiving and e-reporting from Sage Active. It's already in your solution.">Émission, réception et e-reporting depuis Sage Active. C'est déjà dans votre solution.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Plans'><span class="dot"></span>Offres</span><h2 data-en="Find the right solution">Trouvez la bonne solution</h2><p class="lead" data-en="Guided onboarding, unlimited support. Add users or cancel at any time.">Prise en main accompagnée, assistance illimitée. Ajoutez des utilisateurs ou résiliez à tout moment.</p></div>
+<div class="tiers">
+<div class="tier">
+<span class="badge" data-en="Starter with AI">Starter avec IA</span><h3 data-en="Sage Active Starter">Sage Active Starter</h3>
+<p class="desc" data-en="Your online invoicing with AI, for small businesses and their accountant.">Votre facturation en ligne avec l'IA, pour les petites entreprises et leur expert-comptable.</p>
+<div class="price" data-en="25 €&lt;small&gt; /month excl. VAT&lt;/small&gt;">25 €<small> /mois HT</small></div><div class="promo-line">12,50 €/mois les 3 premiers mois</div>
+<div class="meta">1 entreprise · 5 utilisateurs inclus</div>
+<ul><li data-en="Quotes and invoices in one click">Devis et factures en un clic</li><li data-en="E-invoicing via the Sage PA">Facture électronique via la PA Sage</li><li data-en="Track outstanding payments">Suivi des paiements en cours</li><li data-en="Simplified bank reconciliation">Rapprochement bancaire simplifié</li><li data-en="Real-time reports">Rapports en temps réel</li><li data-en="Collaboration with your accountant">Collaboration avec l'expert-comptable</li></ul>
+<a class="btn btn-ghost" data-en="Try one month free" href="#">Essayer un mois gratuit</a>
+</div>
+<div class="tier feat">
+<span class="badge" data-en="Essentials with AI · the most complete">Essentials avec IA · le plus complet</span><h3 data-en="Sage Active Essentials">Sage Active Essentials</h3>
+<p class="desc" data-en="Your all-in-one cloud management solution, for businesses that handle their own accounting.">Votre solution tout-en-un de gestion dans le Cloud, pour les entreprises qui gèrent leur comptabilité.</p>
+<div class="price" data-en="49 €&lt;small&gt; /month excl. VAT&lt;/small&gt;">49 €<small> /mois HT</small></div><div class="promo-line">24,50 €/mois les 3 premiers mois</div>
+<div class="meta">1 entreprise · 10 utilisateurs · 1 salarié inclus</div>
+<ul><li class="head-li" data-en="Everything in Sage Active Starter, plus:">Tout Sage Active Starter, plus :</li><li data-en="Bookkeeping kept and automated">Comptabilité tenue et automatisée</li><li data-en="Real-time accounting statements">États comptables en temps réel</li><li data-en="VAT calculation and filing">Calcul et déclaration de la TVA</li><li data-en="Annual financial reporting">Reporting financier annuel</li><li class="new" data-en="New! Integrated payroll and HR">Nouveau ! Paie et RH intégrées</li></ul>
+<a class="btn btn-green" data-en='Buy at −50% &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Acheter à −50% <span class="arr">→</span></a>
+</div>
+</div>
+<p class="tier-note" data-en="Available in mainland France, Corsica (standard rate) and the relevant overseas departments. Credit card required. Promotion valid until 30/06/2026 for any new subscription: −50% for the first 3 months, excl. VAT.">Disponible en France métropolitaine, en Corse (taux normal) et dans les DOM concernés. Carte de crédit requise. Promotion valable jusqu'au 30/06/2026 pour toute nouvelle souscription : −50% les 3 premiers mois, hors TVA.</p>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Features'><span class="dot"></span>Fonctionnalités</span><h2 data-en="One platform, from quote to payroll">Une seule plateforme, du devis à la paie</h2><p class="lead" data-en="Everything is connected, and AI takes care of the repetitive tasks.">Tout est relié, et l'IA s'occupe des tâches répétitives.</p></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6"></path></svg></div><h3 data-en="Quotes &amp;amp; invoices">Devis &amp; factures</h3><p data-en="Create, duplicate and convert quotes into invoices. Professional documents in your own branding.">Créez, dupliquez et convertissez devis en factures. Documents professionnels à votre image.</p></div>
+<div class="feat-card"><span class="nu" data-en="Compliance">Conformité</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></div><h3 data-en="E-invoicing">Facture électronique</h3><p data-en="Issue and receive your e-invoices via the integrated Sage accredited platform. Ready for 2026 and 2027.">Émettez et recevez vos e-factures via la plateforme agréée Sage, intégrée. Prêt pour 2026 et 2027.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></div><h3 data-en="Accounting &amp;amp; OCR">Comptabilité &amp; OCR</h3><p data-en="Automated purchase capture by OCR, entries generated, full general-ledger audit.">Saisie automatisée des achats par OCR, écritures générées, audit complet du grand livre.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></div><h3 data-en="VAT &amp;amp; closings">TVA &amp; clôtures</h3><p data-en="Calculate and file your VAT, complete your closings, prepare your annual reporting.">Calculez et déclarez votre TVA, réalisez vos clôtures, préparez votre reporting annuel.</p></div>
+<div class="feat-card"><span class="nu" data-en="New">Nouveau</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path><path d="M16 11h5M18.5 8.5v5"></path></svg></div><h3 data-en="Payroll &amp;amp; HR">Paie &amp; RH</h3><p data-en="Manage your employees' payroll and HR in the same solution.">Gérez la paie et les RH de vos salariés dans la même solution.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"></path></svg></div><h3 data-en="Sage Copilot">Sage Copilot</h3><p data-en="The generative AI that automates complex tasks and advises you.">L'IA générative qui automatise les tâches complexes et vous conseille.</p></div>
+</div>
+</div>
+</section>
+<section class="copilot">
+<div class="wrap copilot-grid">
+<div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Intelligence artificielle</span><h2 data-en="Sage Copilot, your trusted assistant">Sage Copilot, votre assistant de confiance</h2><p data-en="Always available to work with you, keep you informed and help you make better decisions. Included in Sage Active.">Toujours disponible pour travailler avec vous, vous tenir informé et vous aider à prendre de meilleures décisions. Inclus dans Sage Active.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Découvrir Sage Copilot <span class="arr">→</span></a></div></div>
+<div class="ai-card"><div class="q">Vous demandez :</div><div class="a">« Quelles factures sont en retard ? »</div><div class="q" style="margin-top:18px">Copilot répond :</div><div class="a">2 factures échues pour <b>4 805 €</b>. La plus ancienne — <b>Atelier Mercier</b> — date de 23 jours. Voulez-vous préparer les relances ?</div></div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Customer voices'><span class="dot"></span>Paroles de clients</span><h2 data-en="They already run everything from Sage Active">Ils gèrent déjà tout depuis Sage Active</h2></div>
+<div class="quotes">
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"Sage Copilot’s AI gives me a trusted assistant every day. It all brings real peace of mind in my work."'>« L'IA de Sage Copilot me donne un assistant de confiance au quotidien. Le tout m'apporte une grande sérénité dans mon métier. »</p><div class="who">Patrick Russo<span>Fondateur, PRussoLive</span></div><div class="real">Témoignage client réel</div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"My accountant and I work on the same data. Closings are done in a few hours."'>« Mon expert-comptable et moi travaillons sur la même donnée. Les clôtures se font en quelques heures. »</p><div class="who">Gérante<span>TPE de services, Lyon · représentatif</span></div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"Receiving and issuing my e-invoices without changing tools — exactly what I needed before 2026."'>« Recevoir et émettre mes factures électroniques sans changer d'outil — exactement ce dont j'avais besoin avant 2026. »</p><div class="who">Dirigeant<span>Bâtiment, Nantes · représentatif</span></div></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Ecosystem'><span class="dot"></span>Écosystème</span><h2 data-en="Extend Sage Active to save time">Élargissez Sage Active pour gagner du temps</h2></div>
+<div class="eco">
+<div class="eco-card"><div class="nm">N2F</div><div class="role" data-en="Expense management">Notes de frais</div><p data-en="Digitise your business expenses — up to 4× faster.">Digitalisez vos frais professionnels — jusqu'à 4× plus rapide.</p></div>
+<div class="eco-card"><div class="nm">Qotid</div><div class="role" data-en="Cash flow · from 49 €/month">Trésorerie · dès 49 €/mois</div><p data-en="Track your profitability by connecting your tools.">Suivez la rentabilité de votre activité en connectant vos outils.</p></div>
+<div class="eco-card"><div class="nm">Open-Flux</div><div class="role" data-en="Connector · from 600 €/year">Connecteur · dès 600 €/an</div><p data-en="Link e-commerce, CRM, document management and PoS to Sage Active.">Reliez e-commerce, CRM, GED et PoS à Sage Active.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap"><div class="head center"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;FAQ' style="justify-content:center"><span class="dot"></span>FAQ</span><h2 data-en="Frequently asked questions">Questions fréquentes</h2></div>
+<div class="faq">
+<details open=""><summary data-en="Is Sage Active compatible with e-invoicing?">Sage Active est-il compatible avec la facture électronique ?</summary><div class="ans">Oui. La plateforme agréée Sage est intégrée nativement : vous émettez, recevez et e-reportez depuis votre solution, sans portail tiers. Vous êtes prêt pour 2026 et 2027.</div></details>
+<details><summary data-en="Who is Sage Active for?">À qui s'adresse Sage Active ?</summary><div class="ans">Aux petites entreprises : facturation, comptabilité, et — avec Essentials — paie et RH, le tout optimisé par l'IA.</div></details>
+<details><summary data-en="How does the subscription work?">Comment fonctionne l'abonnement ?</summary><div class="ans">Mensuel, sans engagement, résiliable à tout moment. −50% les 3 premiers mois jusqu'au 30/06/2026.</div></details>
+</div>
+</div>
+</section>
+<section class="final"><div class="wrap"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Ready to start' style="justify-content:center"><span class="dot"></span>Prêt à démarrer</span><h2 data-en="Discover the power of Sage Active">Découvrez la puissance de Sage Active</h2><p class="lead" data-en="Try it free for a month, or get started with −50% for the first 3 months. The deadline is approaching — get ahead.">Essayez un mois gratuitement, ou lancez-vous avec −50% les 3 premiers mois. L'échéance approche — prenez de l'avance.</p><div class="cta-row"><a class="btn btn-green" data-en='Buy at −50% &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Acheter à −50% <span class="arr">→</span></a><a class="btn btn-ghost" data-en="Try one month free" href="#">Essayer un mois gratuit</a></div></div></section>
+</div>
 <!-- ============================ SPAIN ============================ -->
-<div class="panel" id="panel-es" lang="es">
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow anim d1"><span class="dot"></span>España · VeriFactu y Crea y Crece</span>
-        <h1 class="anim d2">Cumple con la ley. <em>Sin complicarte</em> la gestión.</h1>
-        <p class="lead anim d3">Sage Active reúne facturación y contabilidad en una solución en la nube potenciada por IA — preparada para <b>VeriFactu</b> y la factura electrónica B2B de la Ley Crea y Crece. Toma el control de tus ventas y tus números.</p>
-        <div class="cta-row anim d4">
-          <a href="#" class="btn btn-green">Prueba un mes gratis <span class="arr">→</span></a>
-          <a href="#clock-es" class="btn btn-ghost">Entender la normativa</a>
-        </div>
-        <div class="chips anim d5"><span class="chip">VeriFactu</span><span class="chip">Ley Antifraude</span><span class="chip">Crea y Crece</span><span class="chip">Factura electrónica B2B</span></div>
-        <p class="reassure anim d5">Añade usuarios o cancela en cualquier momento · <b>−50%</b> los 3 primeros meses</p>
-      </div>
-      <div class="mock anim d3" aria-hidden="true">
-        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Buscar…</span><span class="app-ava">LV</span></div>
-        <div class="app-body">
-          <div class="app-rail">
-            <span class="ri active"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></span>
-            <span class="ri spark"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></span>
-          </div>
-          <div class="app-main">
-            <div class="app-h">Facturas de venta <span class="app-cta">+ Factura</span></div>
-            <div class="app-kpis">
-              <div class="kpi"><span class="kl">Cobrado · 30d</span><span class="kv">10 240 €</span><span class="kd up">▲ 9%</span></div>
-              <div class="kpi"><span class="kl">Pendiente</span><span class="kv">5 200 €</span><span class="kd down">2 vencidas</span></div>
-              <div class="kpi"><span class="kl">Vence 7d</span><span class="kv">3 fact.</span><span class="kd up">recordar</span></div>
-            </div>
-            <div class="app-table">
-              <div class="thead"><span>Cliente</span><span>Importe</span><span>Estado</span></div>
-              <div class="doc-row"><span class="cust">Talleres Belmonte SL</span><span class="amt">2 145,00 €</span><span class="st paid">Cobrada</span></div>
-              <div class="doc-row"><span class="cust">Cerámicas Vega</span><span class="amt">4 320,50 €</span><span class="st sent">Emitida · VeriFactu</span></div>
-              <div class="doc-row"><span class="cust">Gestoría Núñez</span><span class="amt">880,00 €</span><span class="st draft">Borrador</span></div>
-            </div>
-            <div class="ai"><span class="pill">Copilot</span><span>Tienes 2 facturas vencidas por <b>5 200 €</b>. ¿Quieres que prepare los recordatorios?</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap trust-inner">
-      <div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· opiniones (ilustrativo)</span></div>
-      <div class="trust-metrics">
-        <div class="tm"><b>−50%</b><span>3 primeros meses</span></div>
-        <div class="tm"><b>5 GB</b><span>almacenamiento incl.</span></div>
-        <div class="tm"><b>≤19</b><span>empleados</span></div>
-      </div>
-      <div class="trust-badges"><span class="tb">RGPD</span><span class="tb">VeriFactu</span><span class="tb">Crea y Crece</span></div>
-    </div>
-  </section>
-
-  <section class="sec why">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Por qué Sage Active</span><h2>Lo que nos diferencia</h2></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Cumplimiento por defecto</h3><p>Registros verificables (VeriFactu) y preparada para la factura electrónica B2B — sin sobresaltos normativos.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>Ventas y contabilidad en una</h3><p>Del presupuesto al cobro y al asiento contable, en una sola plataforma con datos en tiempo real.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></div><h3>Copilot incluido</h3><p>El asistente de IA que automatiza tareas y te ayuda a decidir — incluido en tu suscripción.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clock" id="clock-es">
-    <div class="wrap">
-      <span class="eyebrow on-dark"><span class="dot"></span>Doble reloj normativo</span>
-      <h2>Dos normativas. Una sola solución preparada.</h2>
-      <p class="sub">España avanza en dos frentes: el sistema de facturación verificable VeriFactu (Ley Antifraude) y la factura electrónica B2B obligatoria de la Ley Crea y Crece. Sage Active está diseñada para cumplir, por defecto.</p>
-      <div class="timeline">
-        <div class="tl now"><span class="tag">Activo</span><div class="date">VeriFactu</div><div class="who">Software verificable</div><p>Registros de facturación <b>inalterables y trazables</b>, conforme al Reglamento de la Ley Antifraude. Integrado en Sage Active.</p></div>
-        <div class="tl"><div class="date">Crea y Crece</div><div class="who">Factura electrónica B2B</div><p>Obligación progresiva de <b>emitir y recibir</b> factura electrónica entre empresas y autónomos.</p></div>
-        <div class="tl"><div class="date">La respuesta Sage</div><div class="who">Cumplimiento por defecto</div><p>Emites conforme a la normativa española presente y futura, sin cambiar de herramienta.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Planes</span><h2>Elige la solución para tu negocio</h2><p class="lead">Sesión de incorporación y asistencia telefónica ilimitada. Añade usuarios o cancela cuando quieras.</p></div>
-      <div class="tiers">
-        <div class="tier">
-          <span class="badge">Nuevo · Starter con IA</span><h3>Sage Active Starter</h3>
-          <p class="desc">Presupuestos y facturación online para empresas de hasta 19 empleados con la contabilidad externalizada.</p>
-          <div class="price">25&nbsp;€<small> /mes IVA no incl.</small></div><div class="promo-line">12,50&nbsp;€/mes los 3 primeros meses</div>
-          <div class="meta">1 empresa · 5 usuarios incluidos</div>
-          <ul><li>Crea y envía presupuestos y facturas</li><li>Productos, precios y descuentos</li><li>IA para procesar facturas de compra</li><li>Seguimiento de cobros y pagos</li><li>Conciliación bancaria e informes</li><li>Colabora con tu asesoría · API abierta</li></ul>
-          <a href="#" class="btn btn-ghost">Prueba un mes gratis</a>
-        </div>
-        <div class="tier feat">
-          <span class="badge">Essentials con IA · el más completo</span><h3>Sage Active Essentials</h3>
-          <p class="desc">Facturación y contabilidad online para empresas de hasta 19 empleados que llevan su propia contabilidad.</p>
-          <div class="price">49&nbsp;€<small> /mes IVA no incl.</small></div><div class="promo-line">24,50&nbsp;€/mes los 3 primeros meses</div>
-          <div class="meta">1 empresa · 10 usuarios incluidos</div>
-          <ul><li class="head-li">Todo lo de Starter, y además:</li><li>Asientos contables automáticos</li><li>Pérdidas y ganancias y balance en tiempo real</li><li>Calcula y presenta el IVA</li><li>Estados financieros anuales</li></ul>
-          <a href="#" class="btn btn-green">Compra con −50% <span class="arr">→</span></a>
-        </div>
-      </div>
-      <p class="tier-note">La gestión de nóminas y RR. HH. se ofrece a través de Sage HR. Sage Active está disponible para el ámbito del Territorio Común (excluidos los territorios Forales Vascos, Navarra, Canarias, Ceuta y Melilla). Promoción válida hasta el 30/06/2026 para nuevas contrataciones: −50% los 3 primeros meses, IVA no incluido.</p>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Funcionalidades</span><h2>Una plataforma para ventas y contabilidad</h2><p class="lead">Automatiza compras y ventas, y conoce en tiempo real cuánto debes y cuánto te deben.</p></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div><h3>Presupuestos y facturas</h3><p>Crea, gestiona y envía documentos de venta profesionales con precios y descuentos.</p></div>
-        <div class="feat-card"><span class="nu">Cumplimiento</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>VeriFactu &amp; factura-e</h3><p>Emite registros verificables conforme a la Ley Antifraude y prepárate para la factura electrónica B2B.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></div><h3>Contabilidad &amp; IA</h3><p>Asientos automáticos desde facturas y movimientos bancarios, con auditoría completa del libro mayor.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></div><h3>IVA y cierres</h3><p>Calcula y presenta el IVA, cierra libros y prepara tus estados financieros anuales.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2"/></svg></div><h3>Importación de datos</h3><p>Importa tu plan de cuentas y tu historial, o conéctate con otras apps mediante API.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"/></svg></div><h3>Sage Copilot</h3><p>El asistente de IA que automatiza tareas y te ayuda a decidir mejor.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="copilot">
-    <div class="wrap copilot-grid">
-      <div><span class="eyebrow on-dark"><span class="dot"></span>Inteligencia artificial</span><h2>Sage Copilot, siempre a tu lado</h2><p>Disponible para trabajar contigo, mantenerte informado y ayudarte a tomar decisiones más inteligentes. Incluido en Sage Active.</p><div class="cta-row" style="margin-top:26px"><a href="#" class="btn btn-green">Descubre Sage Copilot <span class="arr">→</span></a></div></div>
-      <div class="ai-card"><div class="q">Le preguntas:</div><div class="a">«¿Qué facturas están vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tienes 2 facturas vencidas por <b>5 200 €</b>. La más antigua — <b>Cerámicas Vega</b> — lleva 19 días. ¿Preparo los recordatorios?</div></div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Opiniones de clientes</span><h2>Negocios que ya confían en Sage Active</h2></div>
-      <div class="quotes">
-        <div class="quote"><div class="stars">★★★★★</div><p>«Emitir conforme a VeriFactu sin pensar en ello me quita un peso de encima. La IA hace el trabajo pesado.»</p><div class="who">Gerente<span>Comercio, Valencia · representativo</span></div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>«Mi asesoría y yo vemos los mismos números. Se acabaron los correos con archivos de un lado a otro.»</p><div class="who">Autónoma<span>Servicios, Sevilla · representativo</span></div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>«En tiempo real sé cuánto debo y cuánto me deben. Decidir es mucho más fácil.»</p><div class="who">Administrador<span>Distribución, Zaragoza · representativo</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Ecosistema</span><h2>Conecta Sage Active y ahorra más tiempo</h2></div>
-      <div class="eco">
-        <div class="eco-card"><div class="nm">Okticket</div><div class="role">Gastos de empresa · desde 9 €/mes</div><p>Automatiza la gestión de gastos de viaje, rápida y completa.</p></div>
-        <div class="eco-card"><div class="nm">API abierta</div><div class="role">Integraciones</div><p>Conecta tu e-commerce, CRM y herramientas de negocio.</p></div>
-        <div class="eco-card"><div class="nm">Sage Marketplace</div><div class="role">Extensiones</div><p>Amplía la solución con apps del ecosistema Sage.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap"><div class="head center"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>FAQ</span><h2>Preguntas frecuentes</h2></div>
-      <div class="faq">
-        <details open><summary>¿Sage Active cumple con VeriFactu y la factura electrónica?</summary><div class="ans">Sí. Sage Active genera registros de facturación verificables conforme a la Ley Antifraude y está preparada para la factura electrónica B2B de la Ley Crea y Crece, adaptada a la legislación española presente y futura.</div></details>
-        <details><summary>¿Puedo declarar el IVA en Sage Active?</summary><div class="ans">Con Sage Active Essentials calculas, preparas y presentas el IVA, y obtienes tus estados financieros en tiempo real. Starter está pensado para empresas con la contabilidad externalizada.</div></details>
-        <details><summary>¿Cómo funciona la suscripción?</summary><div class="ans">Mensual, con altas y bajas flexibles. −50% los 3 primeros meses hasta el 30/06/2026 para nuevas contrataciones.</div></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="final"><div class="wrap"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>Empieza hoy</span><h2>Descubre lo que puede hacer Sage Active</h2><p class="lead">Prueba un mes gratis o empieza ya con un 50% de descuento durante 3 meses.</p><div class="cta-row"><a href="#" class="btn btn-green">Compra con −50% <span class="arr">→</span></a><a href="#" class="btn btn-ghost">Prueba un mes gratis</a></div></div></section>
+<div class="panel" data-nl="es" id="panel-es" lang="es">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow anim d1" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Spain · VeriFactu and Crea y Crece'><span class="dot"></span>España · VeriFactu y Crea y Crece</span>
+<h1 class="anim d2" data-en="Comply with the law. &lt;em&gt;Without complicating&lt;/em&gt; how you run things.">Cumple con la ley. <em>Sin complicarte</em> la gestión.</h1>
+<p class="lead anim d3" data-en="Sage Active brings invoicing and accounting together in one AI-powered cloud solution — ready for &lt;b&gt;VeriFactu&lt;/b&gt; and the B2B e-invoicing of the Crea y Crece law. Take control of your sales and your numbers.">Sage Active reúne facturación y contabilidad en una solución en la nube potenciada por IA — preparada para <b>VeriFactu</b> y la factura electrónica B2B de la Ley Crea y Crece. Toma el control de tus ventas y tus números.</p>
+<div class="cta-row anim d4">
+<a class="btn btn-green" data-en='Try one month free &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Prueba un mes gratis <span class="arr">→</span></a>
+<a class="btn btn-ghost" data-en="Understand the regulation" href="#clock-es">Entender la normativa</a>
 </div>
-
+<div class="chips anim d5"><span class="chip">VeriFactu</span><span class="chip">Ley Antifraude</span><span class="chip">Crea y Crece</span><span class="chip">Factura electrónica B2B</span></div>
+<p class="reassure anim d5" data-en="Add users or cancel at any time · &lt;b&gt;−50%&lt;/b&gt; for the first 3 months">Añade usuarios o cancela en cualquier momento · <b>−50%</b> los 3 primeros meses</p>
+</div>
+<div aria-hidden="true" class="mock anim d3">
+<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Buscar…</span><span class="app-ava">LV</span></div>
+<div class="app-body">
+<div class="app-rail">
+<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
+<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
+</div>
+<div class="app-main">
+<div class="app-h">Facturas de venta <span class="app-cta">+ Factura</span></div>
+<div class="app-kpis">
+<div class="kpi"><span class="kl">Cobrado · 30d</span><span class="kv">10 240 €</span><span class="kd up">▲ 9%</span></div>
+<div class="kpi"><span class="kl">Pendiente</span><span class="kv">5 200 €</span><span class="kd down">2 vencidas</span></div>
+<div class="kpi"><span class="kl">Vence 7d</span><span class="kv">3 fact.</span><span class="kd up">recordar</span></div>
+</div>
+<div class="app-table">
+<div class="thead"><span>Cliente</span><span>Importe</span><span>Estado</span></div>
+<div class="doc-row"><span class="cust">Talleres Belmonte SL</span><span class="amt">2 145,00 €</span><span class="st paid">Cobrada</span></div>
+<div class="doc-row"><span class="cust">Cerámicas Vega</span><span class="amt">4 320,50 €</span><span class="st sent">Emitida · VeriFactu</span></div>
+<div class="doc-row"><span class="cust">Gestoría Núñez</span><span class="amt">880,00 €</span><span class="st draft">Borrador</span></div>
+</div>
+<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>Tienes 2 facturas vencidas por <b>5 200 €</b>. ¿Quieres que prepare los recordatorios?</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="trust">
+<div class="wrap trust-inner">
+<div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· opiniones (ilustrativo)</span></div>
+<div class="trust-metrics">
+<div class="tm"><b>−50%</b><span>3 primeros meses</span></div>
+<div class="tm"><b>5 GB</b><span>almacenamiento incl.</span></div>
+<div class="tm"><b>≤19</b><span>empleados</span></div>
+</div>
+<div class="trust-badges"><span class="tb">RGPD</span><span class="tb">VeriFactu</span><span class="tb">Crea y Crece</span></div>
+</div>
+</section>
+<section class="sec why">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Why Sage Active'><span class="dot"></span>Por qué Sage Active</span><h2 data-en="What sets us apart">Lo que nos diferencia</h2></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"></path><path d="m9 12 2 2 4-4"></path></svg></div><h3 data-en="Compliance by default">Cumplimiento por defecto</h3><p data-en="Verifiable records (VeriFactu) and ready for B2B e-invoicing — no regulatory surprises.">Registros verificables (VeriFactu) y preparada para la factura electrónica B2B — sin sobresaltos normativos.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><h3 data-en="Sales and accounting in one">Ventas y contabilidad en una</h3><p data-en="From quote to payment to accounting entry, in a single platform with real-time data.">Del presupuesto al cobro y al asiento contable, en una sola plataforma con datos en tiempo real.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></div><h3 data-en="Copilot included">Copilot incluido</h3><p data-en="The AI assistant that automates tasks and helps you decide — included in your subscription.">El asistente de IA que automatiza tareas y te ayuda a decidir — incluido en tu suscripción.</p></div>
+</div>
+</div>
+</section>
+<section class="clock" id="clock-es">
+<div class="wrap">
+<span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Dual regulatory clock'><span class="dot"></span>Doble reloj normativo</span>
+<h2 data-en="Two regulations. One solution that's ready.">Dos normativas. Una sola solución preparada.</h2>
+<p class="sub" data-en="Spain is moving on two fronts: the VeriFactu verifiable-invoicing system (Anti-Fraud Law) and the mandatory B2B e-invoicing of the Crea y Crece law. Sage Active is designed to comply, by default.">España avanza en dos frentes: el sistema de facturación verificable VeriFactu (Ley Antifraude) y la factura electrónica B2B obligatoria de la Ley Crea y Crece. Sage Active está diseñada para cumplir, por defecto.</p>
+<div class="timeline">
+<div class="tl now"><span class="tag" data-en="Active">Activo</span><div class="date">VeriFactu</div><div class="who">Software verificable</div><p data-en="&lt;b&gt;Tamper-proof and traceable&lt;/b&gt; invoicing records, compliant with the Anti-Fraud Law regulation. Built into Sage Active.">Registros de facturación <b>inalterables y trazables</b>, conforme al Reglamento de la Ley Antifraude. Integrado en Sage Active.</p></div>
+<div class="tl"><div class="date">Crea y Crece</div><div class="who">Factura electrónica B2B</div><p data-en="Phased obligation to &lt;b&gt;issue and receive&lt;/b&gt; e-invoices between businesses and the self-employed.">Obligación progresiva de <b>emitir y recibir</b> factura electrónica entre empresas y autónomos.</p></div>
+<div class="tl"><div class="date">La respuesta Sage</div><div class="who">Cumplimiento por defecto</div><p data-en="You issue in line with current and future Spanish regulation, without changing tools.">Emites conforme a la normativa española presente y futura, sin cambiar de herramienta.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Plans'><span class="dot"></span>Planes</span><h2 data-en="Choose the solution for your business">Elige la solución para tu negocio</h2><p class="lead" data-en="Onboarding session and unlimited phone support. Add users or cancel whenever you like.">Sesión de incorporación y asistencia telefónica ilimitada. Añade usuarios o cancela cuando quieras.</p></div>
+<div class="tiers">
+<div class="tier">
+<span class="badge" data-en="New · Starter with AI">Nuevo · Starter con IA</span><h3 data-en="Sage Active Starter">Sage Active Starter</h3>
+<p class="desc" data-en="Quotes and online invoicing for businesses of up to 19 employees with outsourced accounting.">Presupuestos y facturación online para empresas de hasta 19 empleados con la contabilidad externalizada.</p>
+<div class="price" data-en="25 €&lt;small&gt; /month excl. VAT&lt;/small&gt;">25 €<small> /mes IVA no incl.</small></div><div class="promo-line">12,50 €/mes los 3 primeros meses</div>
+<div class="meta">1 empresa · 5 usuarios incluidos</div>
+<ul><li data-en="Create and send quotes and invoices">Crea y envía presupuestos y facturas</li><li data-en="Products, prices and discounts">Productos, precios y descuentos</li><li data-en="AI to process purchase invoices">IA para procesar facturas de compra</li><li data-en="Track receipts and payments">Seguimiento de cobros y pagos</li><li data-en="Bank reconciliation and reports">Conciliación bancaria e informes</li><li data-en="Collaborate with your accountant · open API">Colabora con tu asesoría · API abierta</li></ul>
+<a class="btn btn-ghost" data-en="Try one month free" href="#">Prueba un mes gratis</a>
+</div>
+<div class="tier feat">
+<span class="badge" data-en="Essentials with AI · the most complete">Essentials con IA · el más completo</span><h3 data-en="Sage Active Essentials">Sage Active Essentials</h3>
+<p class="desc" data-en="Invoicing and online accounting for businesses of up to 19 employees that keep their own accounts.">Facturación y contabilidad online para empresas de hasta 19 empleados que llevan su propia contabilidad.</p>
+<div class="price" data-en="49 €&lt;small&gt; /month excl. VAT&lt;/small&gt;">49 €<small> /mes IVA no incl.</small></div><div class="promo-line">24,50 €/mes los 3 primeros meses</div>
+<div class="meta">1 empresa · 10 usuarios incluidos</div>
+<ul><li class="head-li" data-en="Everything in Starter, plus:">Todo lo de Starter, y además:</li><li data-en="Automatic accounting entries">Asientos contables automáticos</li><li data-en="Real-time profit &amp;amp; loss and balance sheet">Pérdidas y ganancias y balance en tiempo real</li><li data-en="Calculate and file VAT">Calcula y presenta el IVA</li><li data-en="Annual financial statements">Estados financieros anuales</li></ul>
+<a class="btn btn-green" data-en='Buy at −50% &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Compra con −50% <span class="arr">→</span></a>
+</div>
+</div>
+<p class="tier-note" data-en="Payroll and HR management is offered through Sage HR. Sage Active is available for the Common Territory (excluding the Basque Foral territories, Navarre, the Canary Islands, Ceuta and Melilla). Promotion valid until 30/06/2026 for new subscriptions: −50% for the first 3 months, excl. VAT.">La gestión de nóminas y RR. HH. se ofrece a través de Sage HR. Sage Active está disponible para el ámbito del Territorio Común (excluidos los territorios Forales Vascos, Navarra, Canarias, Ceuta y Melilla). Promoción válida hasta el 30/06/2026 para nuevas contrataciones: −50% los 3 primeros meses, IVA no incluido.</p>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Features'><span class="dot"></span>Funcionalidades</span><h2 data-en="One platform for sales and accounting">Una plataforma para ventas y contabilidad</h2><p class="lead" data-en="Automate purchases and sales, and know in real time what you owe and what you're owed.">Automatiza compras y ventas, y conoce en tiempo real cuánto debes y cuánto te deben.</p></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6"></path></svg></div><h3 data-en="Quotes and invoices">Presupuestos y facturas</h3><p data-en="Create, manage and send professional sales documents with prices and discounts.">Crea, gestiona y envía documentos de venta profesionales con precios y descuentos.</p></div>
+<div class="feat-card"><span class="nu" data-en="Compliance">Cumplimiento</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"></path><path d="m9 12 2 2 4-4"></path></svg></div><h3 data-en="VeriFactu &amp;amp; e-invoicing">VeriFactu &amp; factura-e</h3><p data-en="Issue verifiable records compliant with the Anti-Fraud Law and get ready for B2B e-invoicing.">Emite registros verificables conforme a la Ley Antifraude y prepárate para la factura electrónica B2B.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></div><h3 data-en="Accounting &amp;amp; AI">Contabilidad &amp; IA</h3><p data-en="Automatic entries from invoices and bank movements, with full general-ledger audit.">Asientos automáticos desde facturas y movimientos bancarios, con auditoría completa del libro mayor.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></div><h3 data-en="VAT and closings">IVA y cierres</h3><p data-en="Calculate and file VAT, close the books and prepare your annual financial statements.">Calcula y presenta el IVA, cierra libros y prepara tus estados financieros anuales.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path><circle cx="18" cy="17" r="2"></circle></svg></div><h3 data-en="Data import">Importación de datos</h3><p data-en="Import your chart of accounts and your history, or connect with other apps via API.">Importa tu plan de cuentas y tu historial, o conéctate con otras apps mediante API.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"></path></svg></div><h3 data-en="Sage Copilot">Sage Copilot</h3><p data-en="The AI assistant that automates tasks and helps you decide better.">El asistente de IA que automatiza tareas y te ayuda a decidir mejor.</p></div>
+</div>
+</div>
+</section>
+<section class="copilot">
+<div class="wrap copilot-grid">
+<div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Inteligencia artificial</span><h2 data-en="Sage Copilot, always by your side">Sage Copilot, siempre a tu lado</h2><p data-en="Available to work with you, keep you informed and help you make smarter decisions. Included in Sage Active.">Disponible para trabajar contigo, mantenerte informado y ayudarte a tomar decisiones más inteligentes. Incluido en Sage Active.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Descubre Sage Copilot <span class="arr">→</span></a></div></div>
+<div class="ai-card"><div class="q">Le preguntas:</div><div class="a">«¿Qué facturas están vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tienes 2 facturas vencidas por <b>5 200 €</b>. La más antigua — <b>Cerámicas Vega</b> — lleva 19 días. ¿Preparo los recordatorios?</div></div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Customer reviews'><span class="dot"></span>Opiniones de clientes</span><h2 data-en="Businesses that already trust Sage Active">Negocios que ya confían en Sage Active</h2></div>
+<div class="quotes">
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"Issuing in line with VeriFactu without even thinking about it takes a weight off me. The AI does the heavy lifting."'>«Emitir conforme a VeriFactu sin pensar en ello me quita un peso de encima. La IA hace el trabajo pesado.»</p><div class="who">Gerente<span>Comercio, Valencia · representativo</span></div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"My accountant and I see the same numbers. No more emailing files back and forth."'>«Mi asesoría y yo vemos los mismos números. Se acabaron los correos con archivos de un lado a otro.»</p><div class="who">Autónoma<span>Servicios, Sevilla · representativo</span></div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"In real time I know what I owe and what I’m owed. Deciding is much easier."'>«En tiempo real sé cuánto debo y cuánto me deben. Decidir es mucho más fácil.»</p><div class="who">Administrador<span>Distribución, Zaragoza · representativo</span></div></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Ecosystem'><span class="dot"></span>Ecosistema</span><h2 data-en="Connect Sage Active and save even more time">Conecta Sage Active y ahorra más tiempo</h2></div>
+<div class="eco">
+<div class="eco-card"><div class="nm">Okticket</div><div class="role" data-en="Business expenses · from 9 €/month">Gastos de empresa · desde 9 €/mes</div><p data-en="Automate travel-expense management, fast and complete.">Automatiza la gestión de gastos de viaje, rápida y completa.</p></div>
+<div class="eco-card"><div class="nm">API abierta</div><div class="role" data-en="Integrations">Integraciones</div><p data-en="Connect your e-commerce, CRM and business tools.">Conecta tu e-commerce, CRM y herramientas de negocio.</p></div>
+<div class="eco-card"><div class="nm">Sage Marketplace</div><div class="role" data-en="Extensions">Extensiones</div><p data-en="Extend the solution with apps from the Sage ecosystem.">Amplía la solución con apps del ecosistema Sage.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap"><div class="head center"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;FAQ' style="justify-content:center"><span class="dot"></span>FAQ</span><h2 data-en="Frequently asked questions">Preguntas frecuentes</h2></div>
+<div class="faq">
+<details open=""><summary data-en="Does Sage Active comply with VeriFactu and e-invoicing?">¿Sage Active cumple con VeriFactu y la factura electrónica?</summary><div class="ans">Sí. Sage Active genera registros de facturación verificables conforme a la Ley Antifraude y está preparada para la factura electrónica B2B de la Ley Crea y Crece, adaptada a la legislación española presente y futura.</div></details>
+<details><summary data-en="Can I file VAT in Sage Active?">¿Puedo declarar el IVA en Sage Active?</summary><div class="ans">Con Sage Active Essentials calculas, preparas y presentas el IVA, y obtienes tus estados financieros en tiempo real. Starter está pensado para empresas con la contabilidad externalizada.</div></details>
+<details><summary data-en="How does the subscription work?">¿Cómo funciona la suscripción?</summary><div class="ans">Mensual, con altas y bajas flexibles. −50% los 3 primeros meses hasta el 30/06/2026 para nuevas contrataciones.</div></details>
+</div>
+</div>
+</section>
+<section class="final"><div class="wrap"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Start today' style="justify-content:center"><span class="dot"></span>Empieza hoy</span><h2 data-en="Discover what Sage Active can do">Descubre lo que puede hacer Sage Active</h2><p class="lead" data-en="Try one month free, or start now with 50% off for 3 months.">Prueba un mes gratis o empieza ya con un 50% de descuento durante 3 meses.</p><div class="cta-row"><a class="btn btn-green" data-en='Buy at −50% &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Compra con −50% <span class="arr">→</span></a><a class="btn btn-ghost" data-en="Try one month free" href="#">Prueba un mes gratis</a></div></div></section>
+</div>
 <!-- ============================ GERMANY ============================ -->
-<div class="panel" id="panel-de" lang="de">
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow anim d1"><span class="dot"></span>Deutschland · E-Rechnung &amp; GoBD</span>
-        <h1 class="anim d2">Die Cloud, <em>die alles kann</em> — und gesetzeskonform bleibt.</h1>
-        <p class="lead anim d3">Sage Active bringt Auftragsbearbeitung, Buchhaltung, Lohn und HR in einer Lösung zusammen. <b>GoBD-konform</b>, mit ZUGFeRD und X-Rechnung, ELSTER und DATEV — ideal für kleine Unternehmen.</p>
-        <div class="cta-row anim d4">
-          <a href="#" class="btn btn-green">30 Tage kostenlos testen <span class="arr">→</span></a>
-          <a href="#clock-de" class="btn btn-ghost">E-Rechnung verstehen</a>
-        </div>
-        <div class="chips anim d5"><span class="chip">ZUGFeRD</span><span class="chip">X-Rechnung</span><span class="chip">GoBD-konform</span><span class="chip">ELSTER</span><span class="chip">DATEV</span></div>
-        <p class="reassure anim d5">Flexible Laufzeit · keine versteckten Kosten · <b>50% Rabatt</b> für 3 Monate</p>
-      </div>
-      <div class="mock anim d3" aria-hidden="true">
-        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Suchen…</span><span class="app-ava">LV</span></div>
-        <div class="app-body">
-          <div class="app-rail">
-            <span class="ri active"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></span>
-            <span class="ri spark"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></span>
-          </div>
-          <div class="app-main">
-            <div class="app-h">Verkaufsrechnungen <span class="app-cta">+ Rechnung</span></div>
-            <div class="app-kpis">
-              <div class="kpi"><span class="kl">Eingenommen · 30T</span><span class="kv">24 180 €</span><span class="kd up">▲ 11%</span></div>
-              <div class="kpi"><span class="kl">Offen</span><span class="kv">3 340 €</span><span class="kd down">2 überfällig</span></div>
-              <div class="kpi"><span class="kl">Fällig 7T</span><span class="kv">2 Rg.</span><span class="kd up">erinnern</span></div>
-            </div>
-            <div class="app-table">
-              <div class="thead"><span>Kunde</span><span>Betrag</span><span>Status</span></div>
-              <div class="doc-row"><span class="cust">Bocks OHG</span><span class="amt">10 513,65 €</span><span class="st paid">Gebucht</span></div>
-              <div class="doc-row"><span class="cust">Mondo GmbH</span><span class="amt">6 158,25 €</span><span class="st sent">Versendet · E-Rechnung</span></div>
-              <div class="doc-row"><span class="cust">Meier &amp; Co. KG</span><span class="amt">2 409,75 €</span><span class="st draft">Entwurf</span></div>
-            </div>
-            <div class="ai"><span class="pill">Copilot</span><span>2 Rechnungen sind überfällig (<b>3 340 €</b>). Soll ich Zahlungserinnerungen vorbereiten?</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap trust-inner">
-      <div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· Kundenstimmen</span></div>
-      <div class="trust-metrics">
-        <div class="tm"><b>50%</b><span>für 3 Monate</span></div>
-        <div class="tm"><b>300/500</b><span>Rechnungen inkl.</span></div>
-        <div class="tm"><b>8</b><span>Erweiterungen</span></div>
-      </div>
-      <div class="trust-badges"><span class="tb">GoBD-konform</span><span class="tb">ZUGFeRD</span><span class="tb">X-Rechnung</span></div>
-    </div>
-  </section>
-
-  <section class="sec why">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Warum Sage Active</span><h2>Was uns auszeichnet</h2></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>GoBD, ELSTER &amp; DATEV nativ</h3><p>Gesetzeskonform, USt-Voranmeldung per ELSTER, nahtlose Übergabe an den Steuerberater via DATEV.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>All-in-One inkl. Lohn</h3><p>Auftragsbearbeitung, Buchhaltung, Lohn und HR in einer Cloud — keine Insellösungen mehr.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></div><h3>Tiefstes Ökosystem</h3><p>Acht Erweiterungen — von eBilanz+ bis Handwerk — wachsen mit Ihrem Unternehmen mit.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clock" id="clock-de">
-    <div class="wrap">
-      <span class="eyebrow on-dark"><span class="dot"></span>E-Rechnungspflicht</span>
-      <h2>Empfangen ist Pflicht. Senden kommt. Sie sind vorbereitet.</h2>
-      <p class="sub">Seit dem 1. Januar 2025 müssen Unternehmen im B2B E-Rechnungen empfangen und verarbeiten können. Sage Active liest ZUGFeRD und X-Rechnung ein — und wächst mit den nächsten Stufen mit.</p>
-      <div class="timeline">
-        <div class="tl now"><span class="tag">Jetzt</span><div class="date">Seit 1.1.2025</div><div class="who">Alle B2B-Unternehmen</div><p>Pflicht, strukturierte E-Rechnungen zu <b>empfangen und zu verarbeiten</b> (ZUGFeRD, X-Rechnung).</p></div>
-        <div class="tl"><div class="date">Ab 2027/28</div><div class="who">Senden &amp; Übermittlung</div><p>Stufenweise Pflicht zum <b>Versand</b> strukturierter E-Rechnungen — abhängig von Umsatz und Unternehmensgröße.</p></div>
-        <div class="tl"><div class="date">Die Sage-Antwort</div><div class="who">GoBD-konform &amp; integriert</div><p>Empfangen, verarbeiten, archivieren — und versenden, sobald Pflicht. Alles in Sage Active.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Tarife</span><h2>Sie entscheiden, was zu Ihnen passt</h2><p class="lead">Live-Einführung und unbegrenzter Telefon-Support. Jederzeit Nutzer hinzufügen oder kündigen.</p></div>
-      <div class="tiers">
-        <div class="tier">
-          <span class="badge">Starter mit KI</span><h3>Sage Active Starter</h3>
-          <p class="desc">Die Cloud-Lösung für Angebote und Rechnungen — für kleine Unternehmen und ihren Buchhalter.</p>
-          <div class="price">25&nbsp;€<small> /Monat zzgl. MwSt.</small></div><div class="promo-line">12,50 €/Monat in den ersten 3 Monaten</div>
-          <div class="meta">1 Unternehmen · 5 Nutzer inklusive</div>
-          <ul><li>Angebote und Rechnungen</li><li>KI für Belege und (E-)Rechnungen</li><li>Überblick über unbezahlte Rechnungen</li><li>Einfacher Bankkontenabgleich</li><li>Open API · Live-Einführung</li><li class="new">NEU: Mobile App &amp; Sage Copilot</li></ul>
-          <a href="#" class="btn btn-ghost">30 Tage kostenlos testen</a>
-        </div>
-        <div class="tier feat">
-          <span class="badge">Essentials mit KI · All-in-One</span><h3>Sage Active Essentials</h3>
-          <p class="desc">Die All-in-One-Cloud für Buchhaltung und Lohnabrechnung.</p>
-          <div class="price">49&nbsp;€<small> /Monat zzgl. MwSt.</small></div><div class="promo-line">24,50 €/Monat in den ersten 3 Monaten</div>
-          <div class="meta">1 Unternehmen · 10 Nutzer · 1 Mitarbeiter inklusive</div>
-          <ul><li class="head-li">Alle Vorteile von Starter, plus:</li><li>Doppelte Buchführung (SKR03 &amp; SKR04)</li><li>Echtzeitberichte aus GuV und Bilanz</li><li>Einnahmen-Überschuss-Rechnung (EÜR)</li><li>Umsatzsteuervoranmeldung &amp; Jahresabschluss</li><li class="new">NEU: Lohnabrechnung &amp; HR</li></ul>
-          <a href="#" class="btn btn-green">Kaufen mit 50% Rabatt <span class="arr">→</span></a>
-        </div>
-      </div>
-      <p class="tier-note">Aktion für Neukunden, gültig bis 30.09.2026. Nach 3 Monaten gilt der Listenpreis pro Monat. Zusätzliche Rechnungen über das Kontingent hinaus 0,05 € je Rechnung.</p>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Funktionen</span><h2>Keine Insellösungen mehr</h2><p class="lead">Eine Plattform für Angebote, Buchhaltung, Lohn und HR — einfach und übersichtlich.</p></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div><h3>Angebote &amp; Rechnungen</h3><p>Angebote in Aufträge, Lieferscheine und Rechnungen umwandeln. Professionell und schnell.</p></div>
-        <div class="feat-card"><span class="nu">Compliance</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>E-Rechnung</h3><p>ZUGFeRD und X-Rechnung empfangen, einlesen und verarbeiten — GoBD-konform archiviert.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></div><h3>Buchhaltung &amp; OCR</h3><p>Automatisierte Belegerfassung, Buchungssätze und Echtzeitberichte aus GuV und Bilanz.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></div><h3>USt &amp; ELSTER</h3><p>Umsatzsteuervoranmeldung per ELSTER, Jahresabschlüsse und EÜR — direkt aus der Lösung.</p></div>
-        <div class="feat-card"><span class="nu">Neu</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 11h5M18.5 8.5v5"/></svg></div><h3>Lohn &amp; HR</h3><p>Lohnabrechnung und HR für Ihre Mitarbeiter — in derselben Cloud.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"/></svg></div><h3>Sage Copilot</h3><p>Der KI-Assistent erledigt Routineaufgaben und liefert individuelle Empfehlungen.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="copilot">
-    <div class="wrap copilot-grid">
-      <div><span class="eyebrow on-dark"><span class="dot"></span>Künstliche Intelligenz</span><h2>Sage Copilot — immer an Ihrer Seite</h2><p>Informiert Sie laufend und hilft Ihnen, smartere Entscheidungen zu treffen. Für kurze Zeit kostenlos in Sage Active enthalten.</p><div class="cta-row" style="margin-top:26px"><a href="#" class="btn btn-green">Sage Copilot entdecken <span class="arr">→</span></a></div></div>
-      <div class="ai-card"><div class="q">Sie fragen:</div><div class="a">„Welche Rechnungen sind überfällig?"</div><div class="q" style="margin-top:18px">Copilot antwortet:</div><div class="a">2 Rechnungen sind überfällig (<b>3 340 €</b>). Die älteste — <b>Meier &amp; Co. KG</b> — seit 21 Tagen. Soll ich Zahlungserinnerungen vorbereiten?</div></div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Kundenstimmen</span><h2>Das sagen unsere Kunden zu Sage Active</h2></div>
-      <div class="quotes four">
-        <div class="quote"><div class="stars">★★★★★</div><p>„Mein erster Eindruck: Wow — sofort intuitiv bedienbar und erstaunlich schnell."</p><div class="who">Ralf Armbrüster<span>intellicon GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>„Die Automatisierung reduziert unseren manuellen Aufwand um rund 60 %. Wir sparen mehrere Stunden pro Woche."</p><div class="who">Julia Rohde<span>agriBIOME GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>„Seit wir Sage nutzen, haben wir einen deutlich besseren Überblick über unsere Finanzen."</p><div class="who">Stefan Gärtner<span>HeJo Dresden GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>„Man merkt: Sage entwickelt die Software aktiv weiter."</p><div class="who">Andreas Preidt<span>brAVeTec GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Ökosystem</span><h2>Erweitern Sie Sage Active</h2><p class="lead">Das tiefste Erweiterungs-Ökosystem aller WiSE-Märkte.</p></div>
-      <div class="eco dense">
-        <div class="eco-card"><div class="nm">eBilanz+</div><div class="role">E-Bilanz · 32 €</div><p>E-Bilanz fürs Finanzamt in 30 Minuten.</p></div>
-        <div class="eco-card"><div class="nm">N2F</div><div class="role">Reisekosten · ab 4,80 €/Mon.</div><p>Spesenabrechnung in einem Viertel der Zeit.</p></div>
-        <div class="eco-card"><div class="nm">ePages</div><div class="role">Onlineshop · 25 €/Mon.</div><p>Eigener Onlineshop ohne Technik-Kenntnisse.</p></div>
-        <div class="eco-card"><div class="nm">paywise</div><div class="role">Forderungsmanagement</div><p>Offene Rechnungen ins Inkasso übergeben.</p></div>
-        <div class="eco-card"><div class="nm">Craftboxx</div><div class="role">Einsatzplanung · ab 11,99 €</div><p>Einsätze planen, Zeiten direkt erfassen.</p></div>
-        <div class="eco-card"><div class="nm">clockin</div><div class="role">Zeiterfassung · ab 6,99 €</div><p>Projektzeiten erfassen und abrechnen.</p></div>
-        <div class="eco-card"><div class="nm">FOMA</div><div class="role">Anwaltsinkasso</div><p>Offene Rechnungen in 2 Klicks übergeben.</p></div>
-        <div class="eco-card"><div class="nm">Sage 50 Handwerk</div><div class="role">Handwerk · ab 19,90 €</div><p>Komplettlösung für jeden Handwerksbetrieb.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap"><div class="head center"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>FAQ</span><h2>Häufige Fragen</h2></div>
-      <div class="faq">
-        <details open><summary>Wie funktionieren E-Rechnungen in Sage Active?</summary><div class="ans">Sage Active liest E-Rechnungen in den Formaten ZUGFeRD und X-Rechnung ein, verarbeitet sie automatisch und archiviert GoBD-konform. Der Versand strukturierter E-Rechnungen wird mit den gesetzlichen Stufen ausgebaut.</div></details>
-        <details><summary>Kann ich meine Umsatzsteuervoranmeldung erledigen?</summary><div class="ans">Mit Sage Active Essentials erstellen Sie die USt-Voranmeldung, übermitteln sie per ELSTER und erstellen Jahresabschlüsse sowie die EÜR.</div></details>
-        <details><summary>Wie funktioniert das Abo?</summary><div class="ans">Flexible Laufzeit, keine versteckten Kosten. 50% Rabatt für 3 Monate für Neukunden bis 30.09.2026.</div></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="final"><div class="wrap"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>Jetzt starten</span><h2>Entdecken Sie, was Sage Active alles kann</h2><p class="lead">30 Tage kostenlos testen oder direkt mit 50% Rabatt für 3 Monate loslegen.</p><div class="cta-row"><a href="#" class="btn btn-green">Kaufen mit 50% Rabatt <span class="arr">→</span></a><a href="#" class="btn btn-ghost">30 Tage kostenlos testen</a></div></div></section>
+<div class="panel" data-nl="de" id="panel-de" lang="de">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow anim d1" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Germany · E-invoicing &amp;amp; GoBD'><span class="dot"></span>Deutschland · E-Rechnung &amp; GoBD</span>
+<h1 class="anim d2" data-en="The cloud &lt;em&gt;that does it all&lt;/em&gt; — and stays compliant.">Die Cloud, <em>die alles kann</em> — und gesetzeskonform bleibt.</h1>
+<p class="lead anim d3" data-en="Sage Active brings order management, accounting, payroll and HR together in one solution. &lt;b&gt;GoBD-compliant&lt;/b&gt;, with ZUGFeRD and X-Rechnung, ELSTER and DATEV — ideal for small businesses.">Sage Active bringt Auftragsbearbeitung, Buchhaltung, Lohn und HR in einer Lösung zusammen. <b>GoBD-konform</b>, mit ZUGFeRD und X-Rechnung, ELSTER und DATEV — ideal für kleine Unternehmen.</p>
+<div class="cta-row anim d4">
+<a class="btn btn-green" data-en='Try free for 30 days &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">30 Tage kostenlos testen <span class="arr">→</span></a>
+<a class="btn btn-ghost" data-en="Understand e-invoicing" href="#clock-de">E-Rechnung verstehen</a>
 </div>
-
+<div class="chips anim d5"><span class="chip">ZUGFeRD</span><span class="chip">X-Rechnung</span><span class="chip">GoBD-konform</span><span class="chip">ELSTER</span><span class="chip">DATEV</span></div>
+<p class="reassure anim d5" data-en="Flexible term · no hidden costs · &lt;b&gt;50% off&lt;/b&gt; for 3 months">Flexible Laufzeit · keine versteckten Kosten · <b>50% Rabatt</b> für 3 Monate</p>
+</div>
+<div aria-hidden="true" class="mock anim d3">
+<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Suchen…</span><span class="app-ava">LV</span></div>
+<div class="app-body">
+<div class="app-rail">
+<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
+<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
+</div>
+<div class="app-main">
+<div class="app-h">Verkaufsrechnungen <span class="app-cta">+ Rechnung</span></div>
+<div class="app-kpis">
+<div class="kpi"><span class="kl">Eingenommen · 30T</span><span class="kv">24 180 €</span><span class="kd up">▲ 11%</span></div>
+<div class="kpi"><span class="kl">Offen</span><span class="kv">3 340 €</span><span class="kd down">2 überfällig</span></div>
+<div class="kpi"><span class="kl">Fällig 7T</span><span class="kv">2 Rg.</span><span class="kd up">erinnern</span></div>
+</div>
+<div class="app-table">
+<div class="thead"><span>Kunde</span><span>Betrag</span><span>Status</span></div>
+<div class="doc-row"><span class="cust">Bocks OHG</span><span class="amt">10 513,65 €</span><span class="st paid">Gebucht</span></div>
+<div class="doc-row"><span class="cust">Mondo GmbH</span><span class="amt">6 158,25 €</span><span class="st sent">Versendet · E-Rechnung</span></div>
+<div class="doc-row"><span class="cust">Meier &amp; Co. KG</span><span class="amt">2 409,75 €</span><span class="st draft">Entwurf</span></div>
+</div>
+<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>2 Rechnungen sind überfällig (<b>3 340 €</b>). Soll ich Zahlungserinnerungen vorbereiten?</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="trust">
+<div class="wrap trust-inner">
+<div class="trust-rating"><span class="stars">★★★★★</span><b>4,6/5</b><span>· Kundenstimmen</span></div>
+<div class="trust-metrics">
+<div class="tm"><b>50%</b><span>für 3 Monate</span></div>
+<div class="tm"><b>300/500</b><span>Rechnungen inkl.</span></div>
+<div class="tm"><b>8</b><span>Erweiterungen</span></div>
+</div>
+<div class="trust-badges"><span class="tb">GoBD-konform</span><span class="tb">ZUGFeRD</span><span class="tb">X-Rechnung</span></div>
+</div>
+</section>
+<section class="sec why">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Why Sage Active'><span class="dot"></span>Warum Sage Active</span><h2 data-en="What sets us apart">Was uns auszeichnet</h2></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"></path><path d="m9 12 2 2 4-4"></path></svg></div><h3 data-en="GoBD, ELSTER &amp;amp; DATEV native">GoBD, ELSTER &amp; DATEV nativ</h3><p data-en="Compliant, advance VAT return via ELSTER, seamless handover to your tax adviser via DATEV.">Gesetzeskonform, USt-Voranmeldung per ELSTER, nahtlose Übergabe an den Steuerberater via DATEV.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><h3 data-en="All-in-one incl. payroll">All-in-One inkl. Lohn</h3><p data-en="Order management, accounting, payroll and HR in one cloud — no more isolated solutions.">Auftragsbearbeitung, Buchhaltung, Lohn und HR in einer Cloud — keine Insellösungen mehr.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></div><h3 data-en="Deepest ecosystem">Tiefstes Ökosystem</h3><p data-en="Eight extensions — from eBilanz+ to trades — grow with your business.">Acht Erweiterungen — von eBilanz+ bis Handwerk — wachsen mit Ihrem Unternehmen mit.</p></div>
+</div>
+</div>
+</section>
+<section class="clock" id="clock-de">
+<div class="wrap">
+<span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;E-invoicing obligation'><span class="dot"></span>E-Rechnungspflicht</span>
+<h2 data-en="Receiving is mandatory. Sending is coming. You're ready.">Empfangen ist Pflicht. Senden kommt. Sie sind vorbereitet.</h2>
+<p class="sub" data-en="Since 1 January 2025, businesses must be able to receive and process e-invoices in B2B. Sage Active reads ZUGFeRD and X-Rechnung — and grows with the next stages.">Seit dem 1. Januar 2025 müssen Unternehmen im B2B E-Rechnungen empfangen und verarbeiten können. Sage Active liest ZUGFeRD und X-Rechnung ein — und wächst mit den nächsten Stufen mit.</p>
+<div class="timeline">
+<div class="tl now"><span class="tag" data-en="Now">Jetzt</span><div class="date">Seit 1.1.2025</div><div class="who">Alle B2B-Unternehmen</div><p data-en="Obligation to &lt;b&gt;receive and process&lt;/b&gt; structured e-invoices (ZUGFeRD, X-Rechnung).">Pflicht, strukturierte E-Rechnungen zu <b>empfangen und zu verarbeiten</b> (ZUGFeRD, X-Rechnung).</p></div>
+<div class="tl"><div class="date">Ab 2027/28</div><div class="who">Senden &amp; Übermittlung</div><p data-en="Phased obligation to &lt;b&gt;send&lt;/b&gt; structured e-invoices — depending on turnover and company size.">Stufenweise Pflicht zum <b>Versand</b> strukturierter E-Rechnungen — abhängig von Umsatz und Unternehmensgröße.</p></div>
+<div class="tl"><div class="date">Die Sage-Antwort</div><div class="who">GoBD-konform &amp; integriert</div><p data-en="Receive, process, archive — and send as soon as it's required. All in Sage Active.">Empfangen, verarbeiten, archivieren — und versenden, sobald Pflicht. Alles in Sage Active.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Plans'><span class="dot"></span>Tarife</span><h2 data-en="You decide what suits you">Sie entscheiden, was zu Ihnen passt</h2><p class="lead" data-en="Live onboarding and unlimited phone support. Add users or cancel at any time.">Live-Einführung und unbegrenzter Telefon-Support. Jederzeit Nutzer hinzufügen oder kündigen.</p></div>
+<div class="tiers">
+<div class="tier">
+<span class="badge" data-en="Starter with AI">Starter mit KI</span><h3 data-en="Sage Active Starter">Sage Active Starter</h3>
+<p class="desc" data-en="The cloud solution for quotes and invoices — for small businesses and their bookkeeper.">Die Cloud-Lösung für Angebote und Rechnungen — für kleine Unternehmen und ihren Buchhalter.</p>
+<div class="price" data-en="25 €&lt;small&gt; /month plus VAT&lt;/small&gt;">25 €<small> /Monat zzgl. MwSt.</small></div><div class="promo-line">12,50 €/Monat in den ersten 3 Monaten</div>
+<div class="meta">1 Unternehmen · 5 Nutzer inklusive</div>
+<ul><li data-en="Quotes and invoices">Angebote und Rechnungen</li><li data-en="AI for receipts and (e-)invoices">KI für Belege und (E-)Rechnungen</li><li data-en="Overview of unpaid invoices">Überblick über unbezahlte Rechnungen</li><li data-en="Simple bank reconciliation">Einfacher Bankkontenabgleich</li><li data-en="Open API · live onboarding">Open API · Live-Einführung</li><li class="new" data-en="NEW: Mobile app &amp;amp; Sage Copilot">NEU: Mobile App &amp; Sage Copilot</li></ul>
+<a class="btn btn-ghost" data-en="Try free for 30 days" href="#">30 Tage kostenlos testen</a>
+</div>
+<div class="tier feat">
+<span class="badge" data-en="Essentials with AI · all-in-one">Essentials mit KI · All-in-One</span><h3 data-en="Sage Active Essentials">Sage Active Essentials</h3>
+<p class="desc" data-en="The all-in-one cloud for accounting and payroll.">Die All-in-One-Cloud für Buchhaltung und Lohnabrechnung.</p>
+<div class="price" data-en="49 €&lt;small&gt; /month plus VAT&lt;/small&gt;">49 €<small> /Monat zzgl. MwSt.</small></div><div class="promo-line">24,50 €/Monat in den ersten 3 Monaten</div>
+<div class="meta">1 Unternehmen · 10 Nutzer · 1 Mitarbeiter inklusive</div>
+<ul><li class="head-li" data-en="All the benefits of Starter, plus:">Alle Vorteile von Starter, plus:</li><li data-en="Double-entry bookkeeping (SKR03 &amp;amp; SKR04)">Doppelte Buchführung (SKR03 &amp; SKR04)</li><li data-en="Real-time reports from P&amp;amp;L and balance sheet">Echtzeitberichte aus GuV und Bilanz</li><li data-en="Cash-basis accounting (EÜR)">Einnahmen-Überschuss-Rechnung (EÜR)</li><li data-en="Advance VAT return &amp;amp; annual accounts">Umsatzsteuervoranmeldung &amp; Jahresabschluss</li><li class="new" data-en="NEW: Payroll &amp;amp; HR">NEU: Lohnabrechnung &amp; HR</li></ul>
+<a class="btn btn-green" data-en='Buy with 50% off &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Kaufen mit 50% Rabatt <span class="arr">→</span></a>
+</div>
+</div>
+<p class="tier-note" data-en="Offer for new customers, valid until 30.09.2026. After 3 months the list price per month applies. Additional invoices beyond the allowance 0.05 € per invoice.">Aktion für Neukunden, gültig bis 30.09.2026. Nach 3 Monaten gilt der Listenpreis pro Monat. Zusätzliche Rechnungen über das Kontingent hinaus 0,05 € je Rechnung.</p>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Features'><span class="dot"></span>Funktionen</span><h2 data-en="No more isolated solutions">Keine Insellösungen mehr</h2><p class="lead" data-en="One platform for quotes, accounting, payroll and HR — simple and clear.">Eine Plattform für Angebote, Buchhaltung, Lohn und HR — einfach und übersichtlich.</p></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6"></path></svg></div><h3 data-en="Quotes &amp;amp; invoices">Angebote &amp; Rechnungen</h3><p data-en="Turn quotes into orders, delivery notes and invoices. Professional and fast.">Angebote in Aufträge, Lieferscheine und Rechnungen umwandeln. Professionell und schnell.</p></div>
+<div class="feat-card"><span class="nu" data-en="Compliance">Compliance</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></div><h3 data-en="E-invoicing">E-Rechnung</h3><p data-en="Receive, read and process ZUGFeRD and X-Rechnung — archived GoBD-compliantly.">ZUGFeRD und X-Rechnung empfangen, einlesen und verarbeiten — GoBD-konform archiviert.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></div><h3 data-en="Accounting &amp;amp; OCR">Buchhaltung &amp; OCR</h3><p data-en="Automated receipt capture, journal entries and real-time reports from P&amp;amp;L and balance sheet.">Automatisierte Belegerfassung, Buchungssätze und Echtzeitberichte aus GuV und Bilanz.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></div><h3 data-en="VAT &amp;amp; ELSTER">USt &amp; ELSTER</h3><p data-en="Advance VAT return via ELSTER, annual accounts and EÜR — straight from the solution.">Umsatzsteuervoranmeldung per ELSTER, Jahresabschlüsse und EÜR — direkt aus der Lösung.</p></div>
+<div class="feat-card"><span class="nu" data-en="New">Neu</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path><path d="M16 11h5M18.5 8.5v5"></path></svg></div><h3 data-en="Payroll &amp;amp; HR">Lohn &amp; HR</h3><p data-en="Payroll and HR for your employees — in the same cloud.">Lohnabrechnung und HR für Ihre Mitarbeiter — in derselben Cloud.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"></path></svg></div><h3 data-en="Sage Copilot">Sage Copilot</h3><p data-en="The AI assistant handles routine tasks and delivers tailored recommendations.">Der KI-Assistent erledigt Routineaufgaben und liefert individuelle Empfehlungen.</p></div>
+</div>
+</div>
+</section>
+<section class="copilot">
+<div class="wrap copilot-grid">
+<div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Künstliche Intelligenz</span><h2 data-en="Sage Copilot — always by your side">Sage Copilot — immer an Ihrer Seite</h2><p data-en="Keeps you informed and helps you make smarter decisions. Included in Sage Active free for a limited time.">Informiert Sie laufend und hilft Ihnen, smartere Entscheidungen zu treffen. Für kurze Zeit kostenlos in Sage Active enthalten.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Sage Copilot entdecken <span class="arr">→</span></a></div></div>
+<div class="ai-card"><div class="q">Sie fragen:</div><div class="a">„Welche Rechnungen sind überfällig?"</div><div class="q" style="margin-top:18px">Copilot antwortet:</div><div class="a">2 Rechnungen sind überfällig (<b>3 340 €</b>). Die älteste — <b>Meier &amp; Co. KG</b> — seit 21 Tagen. Soll ich Zahlungserinnerungen vorbereiten?</div></div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Customer voices'><span class="dot"></span>Kundenstimmen</span><h2 data-en="What our customers say about Sage Active">Das sagen unsere Kunden zu Sage Active</h2></div>
+<div class="quotes four">
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"My first impression: wow — instantly intuitive and surprisingly fast."'>„Mein erster Eindruck: Wow — sofort intuitiv bedienbar und erstaunlich schnell."</p><div class="who">Ralf Armbrüster<span>intellicon GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"Automation cuts our manual work by around 60%. We save several hours a week."'>„Die Automatisierung reduziert unseren manuellen Aufwand um rund 60 %. Wir sparen mehrere Stunden pro Woche."</p><div class="who">Julia Rohde<span>agriBIOME GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"Since we started using Sage, we have a much clearer overview of our finances."'>„Seit wir Sage nutzen, haben wir einen deutlich besseren Überblick über unsere Finanzen."</p><div class="who">Stefan Gärtner<span>HeJo Dresden GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
+<div class="quote"><div class="stars">★★★★★</div><p data-en='"You can tell Sage is actively developing the software."'>„Man merkt: Sage entwickelt die Software aktiv weiter."</p><div class="who">Andreas Preidt<span>brAVeTec GmbH</span></div><div class="real">Echte Kundenstimme</div></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Ecosystem'><span class="dot"></span>Ökosystem</span><h2 data-en="Extend Sage Active">Erweitern Sie Sage Active</h2><p class="lead" data-en="The deepest extension ecosystem of all WiSE markets.">Das tiefste Erweiterungs-Ökosystem aller WiSE-Märkte.</p></div>
+<div class="eco dense">
+<div class="eco-card"><div class="nm">eBilanz+</div><div class="role" data-en="E-balance sheet · 32 €">E-Bilanz · 32 €</div><p data-en="E-balance sheet for the tax office in 30 minutes.">E-Bilanz fürs Finanzamt in 30 Minuten.</p></div>
+<div class="eco-card"><div class="nm">N2F</div><div class="role" data-en="Travel expenses · from 4.80 €/mo.">Reisekosten · ab 4,80 €/Mon.</div><p data-en="Expense reports in a quarter of the time.">Spesenabrechnung in einem Viertel der Zeit.</p></div>
+<div class="eco-card"><div class="nm">ePages</div><div class="role" data-en="Online shop · 25 €/mo.">Onlineshop · 25 €/Mon.</div><p data-en="Your own online shop with no technical know-how.">Eigener Onlineshop ohne Technik-Kenntnisse.</p></div>
+<div class="eco-card"><div class="nm">paywise</div><div class="role" data-en="Receivables management">Forderungsmanagement</div><p data-en="Hand unpaid invoices to debt collection.">Offene Rechnungen ins Inkasso übergeben.</p></div>
+<div class="eco-card"><div class="nm">Craftboxx</div><div class="role" data-en="Scheduling · from 11.99 €">Einsatzplanung · ab 11,99 €</div><p data-en="Plan shifts, record times directly.">Einsätze planen, Zeiten direkt erfassen.</p></div>
+<div class="eco-card"><div class="nm">clockin</div><div class="role" data-en="Time tracking · from 6.99 €">Zeiterfassung · ab 6,99 €</div><p data-en="Record and bill project times.">Projektzeiten erfassen und abrechnen.</p></div>
+<div class="eco-card"><div class="nm">FOMA</div><div class="role" data-en="Legal collections">Anwaltsinkasso</div><p data-en="Hand unpaid invoices over in 2 clicks.">Offene Rechnungen in 2 Klicks übergeben.</p></div>
+<div class="eco-card"><div class="nm">Sage 50 Handwerk</div><div class="role" data-en="Trades · from 19.90 €">Handwerk · ab 19,90 €</div><p data-en="Complete solution for any trades business.">Komplettlösung für jeden Handwerksbetrieb.</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap"><div class="head center"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;FAQ' style="justify-content:center"><span class="dot"></span>FAQ</span><h2 data-en="Frequently asked questions">Häufige Fragen</h2></div>
+<div class="faq">
+<details open=""><summary data-en="How do e-invoices work in Sage Active?">Wie funktionieren E-Rechnungen in Sage Active?</summary><div class="ans">Sage Active liest E-Rechnungen in den Formaten ZUGFeRD und X-Rechnung ein, verarbeitet sie automatisch und archiviert GoBD-konform. Der Versand strukturierter E-Rechnungen wird mit den gesetzlichen Stufen ausgebaut.</div></details>
+<details><summary data-en="Can I do my advance VAT return?">Kann ich meine Umsatzsteuervoranmeldung erledigen?</summary><div class="ans">Mit Sage Active Essentials erstellen Sie die USt-Voranmeldung, übermitteln sie per ELSTER und erstellen Jahresabschlüsse sowie die EÜR.</div></details>
+<details><summary data-en="How does the subscription work?">Wie funktioniert das Abo?</summary><div class="ans">Flexible Laufzeit, keine versteckten Kosten. 50% Rabatt für 3 Monate für Neukunden bis 30.09.2026.</div></details>
+</div>
+</div>
+</section>
+<section class="final"><div class="wrap"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Get started' style="justify-content:center"><span class="dot"></span>Jetzt starten</span><h2 data-en="Discover everything Sage Active can do">Entdecken Sie, was Sage Active alles kann</h2><p class="lead" data-en="Try free for 30 days or start straight away with 50% off for 3 months.">30 Tage kostenlos testen oder direkt mit 50% Rabatt für 3 Monate loslegen.</p><div class="cta-row"><a class="btn btn-green" data-en='Buy with 50% off &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Kaufen mit 50% Rabatt <span class="arr">→</span></a><a class="btn btn-ghost" data-en="Try free for 30 days" href="#">30 Tage kostenlos testen</a></div></div></section>
+</div>
 <!-- ============================ PORTUGAL ============================ -->
-<div class="panel" id="panel-pt" lang="pt">
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow anim d1"><span class="dot"></span>Portugal · Conceito de entrada de mercado</span>
-        <h1 class="anim d2">Sage Active para Portugal. <em>Uma decisão</em>, não ainda uma página.</h1>
-        <p class="lead anim d3">O Sage Active ainda não existe em Portugal — o produto de pequenas empresas é o <b>Sage One</b> (certificado pela AT). Este conceito mostra como seria o Sage Active em Portugal, ancorado no regime contínuo de conformidade: ATCUD, QR Code, SAF-T e software certificado.</p>
-        <div class="cta-row anim d4">
-          <a href="#decision-pt" class="btn btn-green">Ver a decisão para o SteerCo <span class="arr">→</span></a>
-          <a href="#clock-pt" class="btn btn-ghost">O contexto regulatório</a>
-        </div>
-        <div class="chips anim d5"><span class="chip">ATCUD</span><span class="chip">QR Code</span><span class="chip">SAF-T (PT)</span><span class="chip">Software certificado (SVAT)</span></div>
-        <p class="reassure anim d5">Conceito confidencial · preços ilustrativos · <b>não comercializado</b></p>
-      </div>
-      <div class="mock anim d3" aria-hidden="true">
-        <div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active · conceito</span><span class="app-search">Pesquisar…</span><span class="app-ava">LV</span></div>
-        <div class="app-body">
-          <div class="app-rail">
-            <span class="ri active"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></span>
-            <span class="ri"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></span>
-            <span class="ri spark"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg></span>
-          </div>
-          <div class="app-main">
-            <div class="app-h">Faturas de venda <span class="app-cta">+ Fatura</span></div>
-            <div class="app-kpis">
-              <div class="kpi"><span class="kl">Recebido · 30d</span><span class="kv">9 060 €</span><span class="kd up">▲ 8%</span></div>
-              <div class="kpi"><span class="kl">Pendente</span><span class="kv">4 555 €</span><span class="kd down">2 vencidas</span></div>
-              <div class="kpi"><span class="kl">Vence 7d</span><span class="kv">2 fat.</span><span class="kd up">lembrar</span></div>
-            </div>
-            <div class="app-table">
-              <div class="thead"><span>Cliente</span><span>Valor</span><span>Estado</span></div>
-              <div class="doc-row"><span class="cust">Padaria Almeida Lda</span><span class="amt">1 180,00 €</span><span class="st paid">Paga</span></div>
-              <div class="doc-row"><span class="cust">Oficinas Sousa</span><span class="amt">3 640,00 €</span><span class="st sent">Emitida · ATCUD+QR</span></div>
-              <div class="doc-row"><span class="cust">Gabinete Costa</span><span class="amt">915,00 €</span><span class="st draft">Rascunho</span></div>
-            </div>
-            <div class="ai"><span class="pill">Copilot</span><span>2 faturas estão vencidas (<b>4 555 €</b>). Quer que prepare os lembretes?</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap trust-inner">
-      <div class="trust-rating"><span class="stars">◆</span><b>Conceito</b><span>· entrada de mercado (não comercializado)</span></div>
-      <div class="trust-metrics">
-        <div class="tm"><b>AT</b><span>certificado (alvo)</span></div>
-        <div class="tm"><b>ATCUD+QR</b><span>nativo</span></div>
-        <div class="tm"><b>SAF-T</b><span>pronto (PT)</span></div>
-      </div>
-      <div class="trust-badges"><span class="tb">SAF-T (PT)</span><span class="tb">ATCUD</span><span class="tb">SVAT</span></div>
-    </div>
-  </section>
-
-  <section class="sec why">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Porquê o Active em Portugal</span><h2>O que tornaria a entrada credível</h2></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Certificado de raiz</h3><p>Software de faturação certificado pela AT, com ATCUD e QR Code, desde o primeiro dia — não negociável em Portugal.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9M3 12a9 9 0 0 0 9 9M3 12h6m-3-3v6"/></svg></div><h3>Base de conformidade contínua</h3><p>Pronto para o SAF-T (PT) e para a assinatura em PDF (2027) e o SAF-T da contabilidade (2028).</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>Consistência europeia</h3><p>A mesma experiência Active de FR/DE/ES, adaptada à realidade portuguesa — sem fragmentar a gama.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clock" id="clock-pt">
-    <div class="wrap">
-      <span class="eyebrow on-dark"><span class="dot"></span>Conformidade contínua</span>
-      <h2>Em Portugal não há um precipício — há uma exigência permanente.</h2>
-      <p class="sub">Ao contrário de França, a conformidade portuguesa é contínua: software certificado pela AT, SAF-T (PT) e ATCUD/QR já em vigor. Qualquer entrada do Sage Active teria de ser <b>software certificado desde o primeiro dia</b>.</p>
-      <div class="timeline">
-        <div class="tl now"><span class="tag">Já em vigor</span><div class="date">2022–23</div><div class="who">ATCUD · QR · SAF-T</div><p>Código único de documento e QR em todas as faturas; SAF-T (PT) e software <b>certificado (SVAT)</b> obrigatórios.</p></div>
-        <div class="tl"><div class="date">1 jan. 2027</div><div class="who">Assinatura em PDF</div><p>Assinatura qualificada (QES) obrigatória nas faturas em PDF para serem aceites como fatura eletrónica.</p></div>
-        <div class="tl"><div class="date">2028</div><div class="who">SAF-T Contabilidade</div><p>Submissão do SAF-T da contabilidade — mais um motivo para uma base contabilística sólida e certificada.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="decision-pt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>A decisão para o SteerCo</span><h2>Evoluir o Sage One — ou lançar o Active PT?</h2><p class="lead">Portugal já tem uma base instalada de Sage One. A questão não é "se" o Active chega, mas "como". Duas vias, uma escolha.</p></div>
-      <div class="decision">
-        <div class="opt">
-          <div class="k">Via A</div><h3>Evoluir o Sage One</h3>
-          <p>Trazer a experiência Active (IA, tempo real, ecossistema) para a base Sage One existente, preservando a certificação AT e os clientes atuais.</p>
-          <ul><li>Sem rutura para a base instalada</li><li>Mantém a certificação e a confiança da AT</li><li>Caminho mais rápido e de menor risco</li><li>Risco: a marca "Active" não chega a Portugal</li></ul>
-        </div>
-        <div class="opt">
-          <div class="k">Via B</div><h3>Lançar o Sage Active PT</h3>
-          <p>Trazer o Active europeu para Portugal como produto certificado de raiz, alinhado com FR/DE/ES, ao lado do Sage One.</p>
-          <ul><li>Consistência europeia total da gama Active</li><li>Plataforma cloud-native e moderna de raiz</li><li>Exige certificação SVAT antes do lançamento</li><li>Risco: sobreposição e canibalização do Sage One</li></ul>
-        </div>
-      </div>
-      <div class="callout"><b>Recomendação WiSE:</b> tratar Portugal como uma decisão de portefólio, não como uma página em falta. A leitura WiSE inclina-se para a <b>Via A — evoluir o Sage One</b> como o caminho de menor risco e mais rápido (preserva a certificação e a base instalada), mantendo a Via B em aberto à medida que a gama Active amadurece. Este conceito existe para tornar a escolha tangível para a liderança — com a conformidade contínua portuguesa como ponto de partida não negociável.</div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Funcionalidades (conceito)</span><h2>O que o Sage Active traria a Portugal</h2><p class="lead">A mesma disciplina dos mercados FR/DE/ES, ancorada na realidade regulatória portuguesa.</p></div>
-      <div class="feats">
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div><h3>Faturação certificada</h3><p>Orçamentos e faturas com ATCUD e QR Code, em software certificado pela AT.</p></div>
-        <div class="feat-card"><span class="nu">Conformidade</span><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>SAF-T &amp; SVAT</h3><p>Geração do SAF-T (PT) e conformidade com o regime de software de faturação certificado.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></div><h3>Contabilidade &amp; IA</h3><p>Lançamentos automáticos e relatórios em tempo real, prontos para o SAF-T da contabilidade (2028).</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"/></svg></div><h3>IVA &amp; obrigações</h3><p>Apuramento do IVA e cumprimento das obrigações fiscais portuguesas.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="2"/></svg></div><h3>Arquivo digital</h3><p>Arquivo dos documentos por 10 anos, partilhado com o contabilista.</p></div>
-        <div class="feat-card"><div class="ic"><svg class="ic-svg" viewBox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"/></svg></div><h3>Sage Copilot</h3><p>O assistente de IA que automatiza tarefas e apoia melhores decisões.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="copilot">
-    <div class="wrap copilot-grid">
-      <div><span class="eyebrow on-dark"><span class="dot"></span>Inteligência artificial</span><h2>Sage Copilot, sempre consigo</h2><p>Disponível para trabalhar consigo, mantê-lo informado e ajudá-lo a tomar decisões mais inteligentes — adaptado à realidade portuguesa.</p><div class="cta-row" style="margin-top:26px"><a href="#decision-pt" class="btn btn-green">Rever a decisão <span class="arr">→</span></a></div></div>
-      <div class="ai-card"><div class="q">Pergunta:</div><div class="a">«Que faturas estão vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tem 2 faturas vencidas no total de <b>4 555 €</b>. A mais antiga — <b>Oficinas Sousa</b> — há 17 dias. Preparo os lembretes?</div></div>
-    </div>
-  </section>
-
-  <section class="final"><div class="wrap"><span class="eyebrow" style="justify-content:center"><span class="dot"></span>Próximo passo</span><h2>Uma escolha de portefólio para a liderança</h2><p class="lead">Evoluir o Sage One ou lançar o Active PT — este conceito existe para tornar a decisão tangível, com a conformidade contínua portuguesa como ponto de partida.</p><div class="cta-row"><a href="#decision-pt" class="btn btn-green">Ver as duas vias <span class="arr">→</span></a></div></div></section>
+<div class="panel" data-nl="pt" id="panel-pt" lang="pt">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow anim d1" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Portugal · Market-entry concept'><span class="dot"></span>Portugal · Conceito de entrada de mercado</span>
+<h1 class="anim d2" data-en="Sage Active for Portugal. &lt;em&gt;A decision&lt;/em&gt;, not yet a page.">Sage Active para Portugal. <em>Uma decisão</em>, não ainda uma página.</h1>
+<p class="lead anim d3" data-en="Sage Active does not yet exist in Portugal — the small-business product is &lt;b&gt;Sage One&lt;/b&gt; (AT-certified). This concept shows what Sage Active would look like in Portugal, anchored in the continuous-compliance regime: ATCUD, QR Code, SAF-T and certified software.">O Sage Active ainda não existe em Portugal — o produto de pequenas empresas é o <b>Sage One</b> (certificado pela AT). Este conceito mostra como seria o Sage Active em Portugal, ancorado no regime contínuo de conformidade: ATCUD, QR Code, SAF-T e software certificado.</p>
+<div class="cta-row anim d4">
+<a class="btn btn-green" data-en='See the decision for SteerCo &lt;span class="arr"&gt;→&lt;/span&gt;' href="#decision-pt">Ver a decisão para o SteerCo <span class="arr">→</span></a>
+<a class="btn btn-ghost" data-en="The regulatory context" href="#clock-pt">O contexto regulatório</a>
+</div>
+<div class="chips anim d5"><span class="chip">ATCUD</span><span class="chip">QR Code</span><span class="chip">SAF-T (PT)</span><span class="chip">Software certificado (SVAT)</span></div>
+<p class="reassure anim d5" data-en="Confidential concept · illustrative pricing · &lt;b&gt;not commercialised&lt;/b&gt;">Conceito confidencial · preços ilustrativos · <b>não comercializado</b></p>
+</div>
+<div aria-hidden="true" class="mock anim d3">
+<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active · conceito</span><span class="app-search">Pesquisar…</span><span class="app-ava">LV</span></div>
+<div class="app-body">
+<div class="app-rail">
+<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
+<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
+<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
+</div>
+<div class="app-main">
+<div class="app-h">Faturas de venda <span class="app-cta">+ Fatura</span></div>
+<div class="app-kpis">
+<div class="kpi"><span class="kl">Recebido · 30d</span><span class="kv">9 060 €</span><span class="kd up">▲ 8%</span></div>
+<div class="kpi"><span class="kl">Pendente</span><span class="kv">4 555 €</span><span class="kd down">2 vencidas</span></div>
+<div class="kpi"><span class="kl">Vence 7d</span><span class="kv">2 fat.</span><span class="kd up">lembrar</span></div>
+</div>
+<div class="app-table">
+<div class="thead"><span>Cliente</span><span>Valor</span><span>Estado</span></div>
+<div class="doc-row"><span class="cust">Padaria Almeida Lda</span><span class="amt">1 180,00 €</span><span class="st paid">Paga</span></div>
+<div class="doc-row"><span class="cust">Oficinas Sousa</span><span class="amt">3 640,00 €</span><span class="st sent">Emitida · ATCUD+QR</span></div>
+<div class="doc-row"><span class="cust">Gabinete Costa</span><span class="amt">915,00 €</span><span class="st draft">Rascunho</span></div>
+</div>
+<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>2 faturas estão vencidas (<b>4 555 €</b>). Quer que prepare os lembretes?</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="trust">
+<div class="wrap trust-inner">
+<div class="trust-rating"><span class="stars">◆</span><b>Conceito</b><span>· entrada de mercado (não comercializado)</span></div>
+<div class="trust-metrics">
+<div class="tm"><b>AT</b><span>certificado (alvo)</span></div>
+<div class="tm"><b>ATCUD+QR</b><span>nativo</span></div>
+<div class="tm"><b>SAF-T</b><span>pronto (PT)</span></div>
+</div>
+<div class="trust-badges"><span class="tb">SAF-T (PT)</span><span class="tb">ATCUD</span><span class="tb">SVAT</span></div>
+</div>
+</section>
+<section class="sec why">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Why Active in Portugal'><span class="dot"></span>Porquê o Active em Portugal</span><h2 data-en="What would make the entry credible">O que tornaria a entrada credível</h2></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"></path><path d="m9 12 2 2 4-4"></path></svg></div><h3 data-en="Certified from the root">Certificado de raiz</h3><p data-en="AT-certified invoicing software, with ATCUD and QR Code, from day one — non-negotiable in Portugal.">Software de faturação certificado pela AT, com ATCUD e QR Code, desde o primeiro dia — não negociável em Portugal.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9M3 12a9 9 0 0 0 9 9M3 12h6m-3-3v6"></path></svg></div><h3 data-en="Continuous-compliance foundation">Base de conformidade contínua</h3><p data-en="Ready for SAF-T (PT) and for PDF signing (2027) and accounting SAF-T (2028).">Pronto para o SAF-T (PT) e para a assinatura em PDF (2027) e o SAF-T da contabilidade (2028).</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div><h3 data-en="European consistency">Consistência europeia</h3><p data-en="The same Active experience as FR/DE/ES, adapted to the Portuguese reality — without fragmenting the range.">A mesma experiência Active de FR/DE/ES, adaptada à realidade portuguesa — sem fragmentar a gama.</p></div>
+</div>
+</div>
+</section>
+<section class="clock" id="clock-pt">
+<div class="wrap">
+<span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Continuous compliance'><span class="dot"></span>Conformidade contínua</span>
+<h2 data-en="In Portugal there's no cliff edge — there's a permanent requirement.">Em Portugal não há um precipício — há uma exigência permanente.</h2>
+<p class="sub" data-en="Unlike France, Portuguese compliance is continuous: AT-certified software, SAF-T (PT) and ATCUD/QR already in force. Any Sage Active entry would have to be &lt;b&gt;certified software from day one&lt;/b&gt;.">Ao contrário de França, a conformidade portuguesa é contínua: software certificado pela AT, SAF-T (PT) e ATCUD/QR já em vigor. Qualquer entrada do Sage Active teria de ser <b>software certificado desde o primeiro dia</b>.</p>
+<div class="timeline">
+<div class="tl now"><span class="tag" data-en="In force">Já em vigor</span><div class="date">2022–23</div><div class="who">ATCUD · QR · SAF-T</div><p data-en="Unique document code and QR on every invoice; SAF-T (PT) and &lt;b&gt;certified (SVAT)&lt;/b&gt; software mandatory.">Código único de documento e QR em todas as faturas; SAF-T (PT) e software <b>certificado (SVAT)</b> obrigatórios.</p></div>
+<div class="tl"><div class="date">1 jan. 2027</div><div class="who">Assinatura em PDF</div><p data-en="Qualified signature (QES) mandatory on PDF invoices for them to be accepted as an e-invoice.">Assinatura qualificada (QES) obrigatória nas faturas em PDF para serem aceites como fatura eletrónica.</p></div>
+<div class="tl"><div class="date">2028</div><div class="who">SAF-T Contabilidade</div><p data-en="Submission of accounting SAF-T — one more reason for a solid, certified accounting foundation.">Submissão do SAF-T da contabilidade — mais um motivo para uma base contabilística sólida e certificada.</p></div>
+</div>
+</div>
+</section>
+<section class="sec" id="decision-pt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;The decision for SteerCo'><span class="dot"></span>A decisão para o SteerCo</span><h2 data-en="Evolve Sage One — or launch Active PT?">Evoluir o Sage One — ou lançar o Active PT?</h2><p class="lead" data-en='Portugal already has an installed base of Sage One. The question isn’t "whether" Active arrives, but "how". Two routes, one choice.'>Portugal já tem uma base instalada de Sage One. A questão não é "se" o Active chega, mas "como". Duas vias, uma escolha.</p></div>
+<div class="decision">
+<div class="opt">
+<div class="k" data-en="Route A">Via A</div><h3 data-en="Evolve Sage One">Evoluir o Sage One</h3>
+<p data-en="Bring the Active experience (AI, real time, ecosystem) to the existing Sage One base, preserving AT certification and current customers.">Trazer a experiência Active (IA, tempo real, ecossistema) para a base Sage One existente, preservando a certificação AT e os clientes atuais.</p>
+<ul><li data-en="No disruption to the installed base">Sem rutura para a base instalada</li><li data-en="Keeps AT certification and trust">Mantém a certificação e a confiança da AT</li><li data-en="Faster, lower-risk path">Caminho mais rápido e de menor risco</li><li data-en='Risk: the "Active" brand doesn’t reach Portugal'>Risco: a marca "Active" não chega a Portugal</li></ul>
+</div>
+<div class="opt">
+<div class="k" data-en="Route B">Via B</div><h3 data-en="Launch Sage Active PT">Lançar o Sage Active PT</h3>
+<p data-en="Bring European Active to Portugal as software certified from the root, aligned with FR/DE/ES, alongside Sage One.">Trazer o Active europeu para Portugal como produto certificado de raiz, alinhado com FR/DE/ES, ao lado do Sage One.</p>
+<ul><li data-en="Full European consistency of the Active range">Consistência europeia total da gama Active</li><li data-en="Modern, cloud-native platform from the root">Plataforma cloud-native e moderna de raiz</li><li data-en="Requires SVAT certification before launch">Exige certificação SVAT antes do lançamento</li><li data-en="Risk: overlap and cannibalisation of Sage One">Risco: sobreposição e canibalização do Sage One</li></ul>
+</div>
+</div>
+<div class="callout"><b>Recomendação WiSE:</b> tratar Portugal como uma decisão de portefólio, não como uma página em falta. A leitura WiSE inclina-se para a <b>Via A — evoluir o Sage One</b> como o caminho de menor risco e mais rápido (preserva a certificação e a base instalada), mantendo a Via B em aberto à medida que a gama Active amadurece. Este conceito existe para tornar a escolha tangível para a liderança — com a conformidade contínua portuguesa como ponto de partida não negociável.</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Features (concept)'><span class="dot"></span>Funcionalidades (conceito)</span><h2 data-en="What Sage Active would bring to Portugal">O que o Sage Active traria a Portugal</h2><p class="lead" data-en="The same discipline as the FR/DE/ES markets, anchored in Portuguese regulatory reality.">A mesma disciplina dos mercados FR/DE/ES, ancorada na realidade regulatória portuguesa.</p></div>
+<div class="feats">
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6"></path></svg></div><h3 data-en="Certified invoicing">Faturação certificada</h3><p data-en="Quotes and invoices with ATCUD and QR Code, in AT-certified software.">Orçamentos e faturas com ATCUD e QR Code, em software certificado pela AT.</p></div>
+<div class="feat-card"><span class="nu" data-en="Compliance">Conformidade</span><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V5z"></path><path d="m9 12 2 2 4-4"></path></svg></div><h3 data-en="SAF-T &amp;amp; SVAT">SAF-T &amp; SVAT</h3><p data-en="Generation of SAF-T (PT) and compliance with the certified-invoicing-software regime.">Geração do SAF-T (PT) e conformidade com o regime de software de faturação certificado.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></div><h3 data-en="Accounting &amp;amp; AI">Contabilidade &amp; IA</h3><p data-en="Automatic entries and real-time reports, ready for accounting SAF-T (2028).">Lançamentos automáticos e relatórios em tempo real, prontos para o SAF-T da contabilidade (2028).</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></div><h3 data-en="VAT &amp;amp; obligations">IVA &amp; obrigações</h3><p data-en="VAT assessment and compliance with Portuguese tax obligations.">Apuramento do IVA e cumprimento das obrigações fiscais portuguesas.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"></path><circle cx="18" cy="17" r="2"></circle></svg></div><h3 data-en="Digital archive">Arquivo digital</h3><p data-en="Document archiving for 10 years, shared with your accountant.">Arquivo dos documentos por 10 anos, partilhado com o contabilista.</p></div>
+<div class="feat-card"><div class="ic"><svg class="ic-svg" viewbox="0 0 24 24"><path d="M12 3v3M5 8h14v11H5zM9 13h.01M15 13h.01M3 12h2M19 12h2"></path></svg></div><h3 data-en="Sage Copilot">Sage Copilot</h3><p data-en="The AI assistant that automates tasks and supports better decisions.">O assistente de IA que automatiza tarefas e apoia melhores decisões.</p></div>
+</div>
+</div>
+</section>
+<section class="copilot">
+<div class="wrap copilot-grid">
+<div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Inteligência artificial</span><h2 data-en="Sage Copilot, always with you">Sage Copilot, sempre consigo</h2><p data-en="Available to work with you, keep you informed and help you make smarter decisions — adapted to the Portuguese reality.">Disponível para trabalhar consigo, mantê-lo informado e ajudá-lo a tomar decisões mais inteligentes — adaptado à realidade portuguesa.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Review the decision &lt;span class="arr"&gt;→&lt;/span&gt;' href="#decision-pt">Rever a decisão <span class="arr">→</span></a></div></div>
+<div class="ai-card"><div class="q">Pergunta:</div><div class="a">«Que faturas estão vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tem 2 faturas vencidas no total de <b>4 555 €</b>. A mais antiga — <b>Oficinas Sousa</b> — há 17 dias. Preparo os lembretes?</div></div>
+</div>
+</section>
+<section class="final"><div class="wrap"><span class="eyebrow" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Next step' style="justify-content:center"><span class="dot"></span>Próximo passo</span><h2 data-en="A portfolio choice for leadership">Uma escolha de portefólio para a liderança</h2><p class="lead" data-en="Evolve Sage One or launch Active PT — this concept exists to make the decision tangible, with Portugal’s continuous compliance as the starting point.">Evoluir o Sage One ou lançar o Active PT — este conceito existe para tornar a decisão tangível, com a conformidade contínua portuguesa como ponto de partida.</p><div class="cta-row"><a class="btn btn-green" data-en='See both routes &lt;span class="arr"&gt;→&lt;/span&gt;' href="#decision-pt">Ver as duas vias <span class="arr">→</span></a></div></div></section>
 </div>
 </div><!-- /view-demos -->
-
 <!-- ============================ CURRENT STATE ============================ -->
 <div class="view" id="view-review">
-  <section class="sec">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow"><span class="dot"></span>Current State · live Sage Active estate</span>
-        <h2>How the live Sage Active sites stack up</h2>
-        <p class="lead">A market-by-market read of the real, published Sage Active pages (June 2026), each assessed against one standard. Reviewed directly from the live sites.</p>
-      </div>
-
-      <div class="finding">
-        <div class="k">Headline finding</div>
-        <h3>Sage Active is a three-market product. Portugal has no Active page at all.</h3>
-        <p>France, Germany and Spain each run a live Sage Active site. <b>Portugal does not</b> — its small-business product is Sage One (AT-certified, ATCUD/QR). Maturity ranks <b>Germany&nbsp;&gt;&nbsp;France&nbsp;&gt;&nbsp;Spain</b>: Germany is the most complete page in the estate, France leads on the regulatory hook, and Spain is the thinnest — carrying the only live error and the biggest strategic gap.</p>
-      </div>
-
-      <div class="rank">
-        <div class="rankcard"><div class="pos">#1 · Most mature</div><div class="cty">Germany</div><div class="verdict">The quality bar — copy the rest to it.</div><div class="score">46<small>/50</small></div></div>
-        <div class="rankcard"><div class="pos">#2 · Strong</div><div class="cty">France</div><div class="verdict">Regulatory leader; thin on proof &amp; QA.</div><div class="score">40<small>/50</small></div></div>
-        <div class="rankcard"><div class="pos">#3 · Needs work</div><div class="cty">Spain</div><div class="verdict">Live error + missing e-invoicing hook.</div><div class="score">28<small>/50</small></div></div>
-        <div class="rankcard"><div class="pos">— · No product</div><div class="cty">Portugal</div><div class="verdict">No Active page — Sage One instead.</div><div class="score">n/a</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Market-by-market</span><h2>What's live, what's strong, what's missing</h2></div>
-      <div class="assess">
-        <div class="acard">
-          <div class="ahead"><h3>France</h3><a class="url" href="https://www.sage.com/fr-fr/produits/sage-active/" target="_blank" rel="noopener">View live page ↗</a></div>
-          <div class="row"><div class="lab">Strengths</div><ul>
-            <li>E-invoicing is front-and-centre, and the PA is correctly named ("plateforme agréée, anciennement PDP") — the best regulatory hook in the estate.</li>
-            <li>Payroll &amp; HR now in-product; clean €25 / €49 tiers; Copilot throughout.</li>
-          </ul></div>
-          <div class="row"><div class="lab bad">Gaps</div><ul>
-            <li class="bad">Screenshots are the shared pan-European build — German client names and visible typos ("Statue", "CARTE DE VIVSITE").</li>
-            <li class="bad">Only one customer testimonial in a carousel built for many.</li>
-            <li class="bad">E-invoicing is never tied to the dated September 2026 / 2027 clock.</li>
-          </ul></div>
-        </div>
-
-        <div class="acard">
-          <div class="ahead"><h3>Spain</h3><a class="url" href="https://www.sage.com/es-es/productos/sage-active/" target="_blank" rel="noopener">View live page ↗</a></div>
-          <div class="row"><div class="lab">Strengths</div><ul>
-            <li>Clean Spanish copy; Copilot featured prominently; clear tier structure.</li>
-            <li>Okticket expense extension; scalable SaaS / RGPD reassurance.</li>
-          </ul></div>
-          <div class="row"><div class="lab bad">Gaps</div><ul>
-            <li class="bad">Promo copy contradicts itself — hero/cards say "50% for 3 months", the footnote says "100% first month". A live conversion-killer.</li>
-            <li class="bad">VeriFactu / Crea y Crece is almost absent — Spain buries its own regulatory clock.</li>
-            <li class="bad">No customer testimonials; one extension only; no payroll tier (silent scope gap vs FR/DE).</li>
-          </ul></div>
-        </div>
-
-        <div class="acard">
-          <div class="ahead"><h3>Germany</h3><a class="url" href="https://www.sage.com/de-de/produkte/sage-active/" target="_blank" rel="noopener">View live page ↗</a></div>
-          <div class="row"><div class="lab">Strengths</div><ul>
-            <li>Four named customer testimonials and an eight-extension ecosystem grid — the deepest in the estate.</li>
-            <li>Mobile app, Überblick/Funktionen sub-nav, SKR03/04, EÜR, ELSTER &amp; DATEV detail, payroll &amp; HR.</li>
-          </ul></div>
-          <div class="row"><div class="lab bad">Gaps</div><ul>
-            <li class="bad">E-Rechnung framed as receive-only — the issuing roadmap is undersold.</li>
-            <li class="bad">French client names in the shared screenshots; "Zahi" typo.</li>
-            <li class="bad">Promo ends 30.09.2026 — three months out of step with FR/ES (30.06.2026).</li>
-          </ul></div>
-        </div>
-
-        <div class="acard">
-          <div class="ahead"><h3>Portugal</h3><a class="url" href="https://www.sage.com/pt-pt/produtos/sage-one/" target="_blank" rel="noopener">No Active page · Sage One ↗</a></div>
-          <div class="row"><div class="lab">Baseline (Sage One)</div><ul>
-            <li>AT-certified small-business invoicing, ATCUD/QR compliant, with an installed base.</li>
-            <li>Sage for Accountants / Sage 50 serve the practice channel.</li>
-          </ul></div>
-          <div class="row"><div class="lab bad">Gaps</div><ul>
-            <li class="bad">No Sage Active product, page or pricing exists in Portugal.</li>
-            <li class="bad">Continuous-compliance regime (SVAT / SAF-T) raises the entry bar — certified from day one.</li>
-            <li class="bad">Build-vs-evolve portfolio decision is unresolved.</li>
-          </ul></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Shared across the estate</span><h2>Three issues every market ships</h2></div>
-      <div class="assess">
-        <div class="acard"><h3>1 · Un-localised screenshots</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">Every market embeds the same pan-European product build — German client names on the FR/ES pages, French names on the DE page — plus visible QA typos. One fix lifts three markets and the brand with them.</p></div>
-        <div class="acard"><h3>2 · Promo calendar drift</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">FR and ES promotions end 30/06/2026; Germany runs to 30.09.2026; and Spain's promo copy even contradicts itself on the page. The European offer needs one coordinated calendar and one consistent line.</p></div>
-        <div class="acard"><h3>3 · Inconsistent e-invoicing</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">France leads with it, Germany frames it as receive-only, Spain barely mentions it. Compliance is the one reason every SMB buys now — it should be the universal hero spine across all markets.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Sequenced recommendation</span><h2>Where to act, in what order</h2></div>
-      <table class="matrix">
-        <thead><tr><th style="width:80px">Priority</th><th>Action</th><th style="width:120px">Market</th><th>Why</th></tr></thead>
-        <tbody>
-          <tr><td><span class="pri now">Now</span></td><td><b>Fix the promo contradiction + add the VeriFactu hook</b></td><td>Spain</td><td>The only live error and the biggest strategic gap — fastest, highest-value fix.</td></tr>
-          <tr><td><span class="pri now">Now</span></td><td><b>Localise &amp; de-typo the product screenshots</b></td><td>All</td><td>One fix improves three markets at once — real brand-quality lift.</td></tr>
-          <tr><td><span class="pri next">Next</span></td><td><b>Make e-invoicing the universal hero spine</b></td><td>ES · DE</td><td>France proves the model; Spain and Germany (issuing) should adopt it.</td></tr>
-          <tr><td><span class="pri next">Next</span></td><td><b>Replicate Germany's depth — testimonials, ecosystem, IA</b></td><td>FR · ES</td><td>Raise the two thinner pages to the quality bar.</td></tr>
-          <tr><td><span class="pri then">Then</span></td><td><b>Resolve build-vs-evolve</b></td><td>Portugal</td><td>A portfolio decision, not a missing page — use the demo to force it.</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+<section class="sec">
+<div class="wrap">
+<div class="head">
+<span class="eyebrow"><span class="dot"></span>Current State · live Sage Active estate</span>
+<h2>How the live Sage Active sites stack up</h2>
+<p class="lead">A market-by-market read of the real, published Sage Active pages (June 2026), each assessed against one standard. Reviewed directly from the live sites.</p>
+</div>
+<div class="finding">
+<div class="k">Headline finding</div>
+<h3>Sage Active is a three-market product. Portugal has no Active page at all.</h3>
+<p>France, Germany and Spain each run a live Sage Active site. <b>Portugal does not</b> — its small-business product is Sage One (AT-certified, ATCUD/QR). Maturity ranks <b>Germany &gt; France &gt; Spain</b>: Germany is the most complete page in the estate, France leads on the regulatory hook, and Spain is the thinnest — carrying the only live error and the biggest strategic gap.</p>
+</div>
+<div class="rank">
+<div class="rankcard"><div class="pos">#1 · Most mature</div><div class="cty">Germany</div><div class="verdict">The quality bar — copy the rest to it.</div><div class="score">46<small>/50</small></div></div>
+<div class="rankcard"><div class="pos">#2 · Strong</div><div class="cty">France</div><div class="verdict">Regulatory leader; thin on proof &amp; QA.</div><div class="score">40<small>/50</small></div></div>
+<div class="rankcard"><div class="pos">#3 · Needs work</div><div class="cty">Spain</div><div class="verdict">Live error + missing e-invoicing hook.</div><div class="score">28<small>/50</small></div></div>
+<div class="rankcard"><div class="pos">— · No product</div><div class="cty">Portugal</div><div class="verdict">No Active page — Sage One instead.</div><div class="score">n/a</div></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Market-by-market</span><h2>What's live, what's strong, what's missing</h2></div>
+<div class="assess">
+<div class="acard">
+<div class="ahead"><h3>France</h3><a class="url" href="https://www.sage.com/fr-fr/produits/sage-active/" rel="noopener" target="_blank">View live page ↗</a></div>
+<div class="row"><div class="lab">Strengths</div><ul>
+<li>E-invoicing is front-and-centre, and the PA is correctly named ("plateforme agréée, anciennement PDP") — the best regulatory hook in the estate.</li>
+<li>Payroll &amp; HR now in-product; clean €25 / €49 tiers; Copilot throughout.</li>
+</ul></div>
+<div class="row"><div class="lab bad">Gaps</div><ul>
+<li class="bad">Screenshots are the shared pan-European build — German client names and visible typos ("Statue", "CARTE DE VIVSITE").</li>
+<li class="bad">Only one customer testimonial in a carousel built for many.</li>
+<li class="bad">E-invoicing is never tied to the dated September 2026 / 2027 clock.</li>
+</ul></div>
+</div>
+<div class="acard">
+<div class="ahead"><h3>Spain</h3><a class="url" href="https://www.sage.com/es-es/productos/sage-active/" rel="noopener" target="_blank">View live page ↗</a></div>
+<div class="row"><div class="lab">Strengths</div><ul>
+<li>Clean Spanish copy; Copilot featured prominently; clear tier structure.</li>
+<li>Okticket expense extension; scalable SaaS / RGPD reassurance.</li>
+</ul></div>
+<div class="row"><div class="lab bad">Gaps</div><ul>
+<li class="bad">Promo copy contradicts itself — hero/cards say "50% for 3 months", the footnote says "100% first month". A live conversion-killer.</li>
+<li class="bad">VeriFactu / Crea y Crece is almost absent — Spain buries its own regulatory clock.</li>
+<li class="bad">No customer testimonials; one extension only; no payroll tier (silent scope gap vs FR/DE).</li>
+</ul></div>
+</div>
+<div class="acard">
+<div class="ahead"><h3>Germany</h3><a class="url" href="https://www.sage.com/de-de/produkte/sage-active/" rel="noopener" target="_blank">View live page ↗</a></div>
+<div class="row"><div class="lab">Strengths</div><ul>
+<li>Four named customer testimonials and an eight-extension ecosystem grid — the deepest in the estate.</li>
+<li>Mobile app, Überblick/Funktionen sub-nav, SKR03/04, EÜR, ELSTER &amp; DATEV detail, payroll &amp; HR.</li>
+</ul></div>
+<div class="row"><div class="lab bad">Gaps</div><ul>
+<li class="bad">E-Rechnung framed as receive-only — the issuing roadmap is undersold.</li>
+<li class="bad">French client names in the shared screenshots; "Zahi" typo.</li>
+<li class="bad">Promo ends 30.09.2026 — three months out of step with FR/ES (30.06.2026).</li>
+</ul></div>
+</div>
+<div class="acard">
+<div class="ahead"><h3>Portugal</h3><a class="url" href="https://www.sage.com/pt-pt/produtos/sage-one/" rel="noopener" target="_blank">No Active page · Sage One ↗</a></div>
+<div class="row"><div class="lab">Baseline (Sage One)</div><ul>
+<li>AT-certified small-business invoicing, ATCUD/QR compliant, with an installed base.</li>
+<li>Sage for Accountants / Sage 50 serve the practice channel.</li>
+</ul></div>
+<div class="row"><div class="lab bad">Gaps</div><ul>
+<li class="bad">No Sage Active product, page or pricing exists in Portugal.</li>
+<li class="bad">Continuous-compliance regime (SVAT / SAF-T) raises the entry bar — certified from day one.</li>
+<li class="bad">Build-vs-evolve portfolio decision is unresolved.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Shared across the estate</span><h2>Three issues every market ships</h2></div>
+<div class="assess">
+<div class="acard"><h3>1 · Un-localised screenshots</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">Every market embeds the same pan-European product build — German client names on the FR/ES pages, French names on the DE page — plus visible QA typos. One fix lifts three markets and the brand with them.</p></div>
+<div class="acard"><h3>2 · Promo calendar drift</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">FR and ES promotions end 30/06/2026; Germany runs to 30.09.2026; and Spain's promo copy even contradicts itself on the page. The European offer needs one coordinated calendar and one consistent line.</p></div>
+<div class="acard"><h3>3 · Inconsistent e-invoicing</h3><p style="color:var(--muted);font-size:14.5px;margin-top:10px">France leads with it, Germany frames it as receive-only, Spain barely mentions it. Compliance is the one reason every SMB buys now — it should be the universal hero spine across all markets.</p></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Sequenced recommendation</span><h2>Where to act, in what order</h2></div>
+<table class="matrix">
+<thead><tr><th style="width:80px">Priority</th><th>Action</th><th style="width:120px">Market</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td><span class="pri now">Now</span></td><td><b>Fix the promo contradiction + add the VeriFactu hook</b></td><td>Spain</td><td>The only live error and the biggest strategic gap — fastest, highest-value fix.</td></tr>
+<tr><td><span class="pri now">Now</span></td><td><b>Localise &amp; de-typo the product screenshots</b></td><td>All</td><td>One fix improves three markets at once — real brand-quality lift.</td></tr>
+<tr><td><span class="pri next">Next</span></td><td><b>Make e-invoicing the universal hero spine</b></td><td>ES · DE</td><td>France proves the model; Spain and Germany (issuing) should adopt it.</td></tr>
+<tr><td><span class="pri next">Next</span></td><td><b>Replicate Germany's depth — testimonials, ecosystem, IA</b></td><td>FR · ES</td><td>Raise the two thinner pages to the quality bar.</td></tr>
+<tr><td><span class="pri then">Then</span></td><td><b>Resolve build-vs-evolve</b></td><td>Portugal</td><td>A portfolio decision, not a missing page — use the demo to force it.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
 </div><!-- /view-review -->
-
 <!-- ============================ PLAYBOOK ============================ -->
 <div class="view" id="view-playbook">
-  <section class="sec">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow"><span class="dot"></span>Playbook · the WiSE Active standard</span>
-        <h2>What "good" looks like for a Sage Active country page</h2>
-        <p class="lead">The standard the demos in this hub are built to, and the live sites are measured against — the same discipline as the France accountant playbook.</p>
-      </div>
-      <div class="prin">
-        <div class="col do"><h3>Do</h3><ul>
-          <li>Lead with the local regulatory clock, dated and specific (Sept 2026; VeriFactu; E-Rechnung; ATCUD/SAF-T).</li>
-          <li>Name the compliance mechanism — plateforme agréée, VeriFactu, ZUGFeRD/X-Rechnung, SVAT — as proof, not just "ready".</li>
-          <li>Show real, named customer voices — three minimum.</li>
-          <li>Localise every screenshot to the market's language and client names.</li>
-          <li>State the offer once, consistently, with a single end-date.</li>
-          <li>Make Copilot concrete with a real question-and-answer.</li>
-        </ul></div>
-        <div class="col dont"><h3>Don't</h3><ul>
-          <li>Say "compliant" without naming the mechanism or the date.</li>
-          <li>Ship the shared pan-European screenshots with foreign names and typos.</li>
-          <li>Run a carousel with a single quote — or none at all.</li>
-          <li>Contradict the promo between hero, cards and footnote.</li>
-          <li>Leave a silent scope gap (payroll in FR/DE, absent in ES) unexplained.</li>
-          <li>Use "migration" for transitions — use accompanied-transition language.</li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Scorecard · 10-point rubric</span><h2>How each market scores today</h2><p class="lead">Ten criteria, five points each. The demos in this hub are built to score 47+.</p></div>
-      <div class="crit">
-        <div class="ci"><b>Regulatory hook</b> — <span>leads with the market's dated compliance clock.</span></div>
-        <div class="ci"><b>Compliance proof</b> — <span>names the mechanism (PA, VeriFactu, ZUGFeRD, SAF-T), not just "ready".</span></div>
-        <div class="ci"><b>Tier &amp; pricing clarity</b> — <span>plans, inclusions and price stated plainly.</span></div>
-        <div class="ci"><b>Scope completeness</b> — <span>expected breadth (e.g. payroll) present or explained.</span></div>
-        <div class="ci"><b>AI / Copilot</b> — <span>the assistant shown concretely, not just named.</span></div>
-        <div class="ci"><b>Customer voice</b> — <span>real, named testimonials — three or more.</span></div>
-        <div class="ci"><b>Ecosystem depth</b> — <span>breadth of named integrations and extensions.</span></div>
-        <div class="ci"><b>Localisation &amp; QA</b> — <span>language, client names and screenshots correct for the market.</span></div>
-        <div class="ci"><b>Information architecture</b> — <span>navigation and structure that aid the buyer.</span></div>
-        <div class="ci"><b>Conversion clarity</b> — <span>consistent offer, clear CTAs, no contradictions.</span></div>
-      </div>
-      <div class="score-grid">
-        <div class="scol lead-card">
-          <div class="stop"><span class="nm">Germany</span><span class="tot">46<small>/50</small></span></div>
-          <div class="bars">
-            <div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="n">3/5</span></div>
-            <div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-          </div>
-        </div>
-        <div class="scol">
-          <div class="stop"><span class="nm">France</span><span class="tot">40<small>/50</small></span></div>
-          <div class="bars">
-            <div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
-            <div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="n">3/5</span></div>
-            <div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
-            <div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-          </div>
-        </div>
-        <div class="scol">
-          <div class="stop"><span class="nm">Spain</span><span class="tot">28<small>/50</small></span></div>
-          <div class="bars">
-            <div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
-            <div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
-            <div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
-            <div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
-            <div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
-            <div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
-            <div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
-          </div>
-        </div>
-      </div>
-      <p class="tier-note">Portugal is not scored on a live page (none exists). The Portugal demo is assessed as a market-entry concept against this same standard.</p>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>The regulatory hook · per market</span><h2>Every page leads with its local clock</h2></div>
-      <table class="matrix">
-        <thead><tr><th style="width:120px">Market</th><th>The hook the page must lead with</th><th style="width:150px">Mechanism named</th></tr></thead>
-        <tbody>
-          <tr><td><b>France</b></td><td>Facture électronique B2B obligatoire — recevoir dès sept. 2026, émettre dès sept. 2027.</td><td>Plateforme agréée Sage</td></tr>
-          <tr><td><b>Spain</b></td><td>VeriFactu (Ley Antifraude) + factura electrónica B2B (Crea y Crece).</td><td>VeriFactu / factura-e</td></tr>
-          <tr><td><b>Germany</b></td><td>E-Rechnung — empfangen seit Jan 2025, Versand stufenweise danach.</td><td>ZUGFeRD / X-Rechnung · GoBD</td></tr>
-          <tr><td><b>Portugal</b></td><td>Continuous: ATCUD/QR/SAF-T live; QES-on-PDF 2027; SAF-T accounting 2028.</td><td>SAF-T (PT) · certified (SVAT)</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="sec alt">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Consistency lock</span><h2>Language we hold the line on</h2></div>
-      <div class="lock">
-        <div class="lockrow"><span class="use">Use:</span> plateforme agréée (PA) &nbsp;·&nbsp; <span class="avoid">Avoid:</span> PDP (now legacy)<div class="x">France e-invoicing transmission — the term changed; the page should reflect it.</div></div>
-        <div class="lockrow"><span class="use">Use:</span> VeriFactu, factura electrónica &nbsp;·&nbsp; <span class="avoid">Avoid:</span> vague "cumple la ley"<div class="x">Spain — name the mechanism, don't gesture at compliance.</div></div>
-        <div class="lockrow"><span class="use">Use:</span> ZUGFeRD / X-Rechnung, GoBD-konform &nbsp;·&nbsp; <span class="avoid">Avoid:</span> generic "E-Rechnung-ready"<div class="x">Germany — the formats are the proof points.</div></div>
-        <div class="lockrow"><span class="use">Use:</span> ATCUD / SAF-T / certified (SVAT) &nbsp;·&nbsp; <span class="avoid">Avoid:</span> implying a B2B "cliff"<div class="x">Portugal compliance is continuous, not a single deadline.</div></div>
-        <div class="lockrow"><span class="use">Use:</span> accompanied transition / reprise &nbsp;·&nbsp; <span class="avoid">Avoid:</span> "migration"<div class="x">Carried over from the accountant playbook — holds across all markets.</div></div>
-        <div class="lockrow"><span class="use">Use:</span> one offer, one end-date &nbsp;·&nbsp; <span class="avoid">Avoid:</span> contradictory promo copy<div class="x">Directly fixes the live Spain page.</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="wrap">
-      <div class="head"><span class="eyebrow"><span class="dot"></span>Replication sequence</span><h2>How to roll this across the estate</h2></div>
-      <table class="matrix">
-        <thead><tr><th style="width:60px">Step</th><th>Move</th><th style="width:130px">When</th></tr></thead>
-        <tbody>
-          <tr><td><b>1</b></td><td>Fix Spain — resolve the promo contradiction and add the VeriFactu hook.</td><td><span class="pri now">Now</span></td></tr>
-          <tr><td><b>2</b></td><td>Localise and de-typo the product screenshots across all markets.</td><td><span class="pri now">Now</span></td></tr>
-          <tr><td><b>3</b></td><td>Add the e-invoicing hero spine to Spain and Germany (issuing).</td><td><span class="pri next">Next</span></td></tr>
-          <tr><td><b>4</b></td><td>Lift France and Spain to Germany's depth — testimonials, ecosystem, IA.</td><td><span class="pri next">Next</span></td></tr>
-          <tr><td><b>5</b></td><td>Decide Portugal — evolve Sage One or launch Active PT.</td><td><span class="pri then">Then</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+<section class="sec">
+<div class="wrap">
+<div class="head">
+<span class="eyebrow"><span class="dot"></span>Playbook · the WiSE Active standard</span>
+<h2>What "good" looks like for a Sage Active country page</h2>
+<p class="lead">The standard the demos in this hub are built to, and the live sites are measured against — the same discipline as the France accountant playbook.</p>
+</div>
+<div class="prin">
+<div class="col do"><h3>Do</h3><ul>
+<li>Lead with the local regulatory clock, dated and specific (Sept 2026; VeriFactu; E-Rechnung; ATCUD/SAF-T).</li>
+<li>Name the compliance mechanism — plateforme agréée, VeriFactu, ZUGFeRD/X-Rechnung, SVAT — as proof, not just "ready".</li>
+<li>Show real, named customer voices — three minimum.</li>
+<li>Localise every screenshot to the market's language and client names.</li>
+<li>State the offer once, consistently, with a single end-date.</li>
+<li>Make Copilot concrete with a real question-and-answer.</li>
+</ul></div>
+<div class="col dont"><h3>Don't</h3><ul>
+<li>Say "compliant" without naming the mechanism or the date.</li>
+<li>Ship the shared pan-European screenshots with foreign names and typos.</li>
+<li>Run a carousel with a single quote — or none at all.</li>
+<li>Contradict the promo between hero, cards and footnote.</li>
+<li>Leave a silent scope gap (payroll in FR/DE, absent in ES) unexplained.</li>
+<li>Use "migration" for transitions — use accompanied-transition language.</li>
+</ul></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Scorecard · 10-point rubric</span><h2>How each market scores today</h2><p class="lead">Ten criteria, five points each. The demos in this hub are built to score 47+.</p></div>
+<div class="crit">
+<div class="ci"><b>Regulatory hook</b> — <span>leads with the market's dated compliance clock.</span></div>
+<div class="ci"><b>Compliance proof</b> — <span>names the mechanism (PA, VeriFactu, ZUGFeRD, SAF-T), not just "ready".</span></div>
+<div class="ci"><b>Tier &amp; pricing clarity</b> — <span>plans, inclusions and price stated plainly.</span></div>
+<div class="ci"><b>Scope completeness</b> — <span>expected breadth (e.g. payroll) present or explained.</span></div>
+<div class="ci"><b>AI / Copilot</b> — <span>the assistant shown concretely, not just named.</span></div>
+<div class="ci"><b>Customer voice</b> — <span>real, named testimonials — three or more.</span></div>
+<div class="ci"><b>Ecosystem depth</b> — <span>breadth of named integrations and extensions.</span></div>
+<div class="ci"><b>Localisation &amp; QA</b> — <span>language, client names and screenshots correct for the market.</span></div>
+<div class="ci"><b>Information architecture</b> — <span>navigation and structure that aid the buyer.</span></div>
+<div class="ci"><b>Conversion clarity</b> — <span>consistent offer, clear CTAs, no contradictions.</span></div>
+</div>
+<div class="score-grid">
+<div class="scol lead-card">
+<div class="stop"><span class="nm">Germany</span><span class="tot">46<small>/50</small></span></div>
+<div class="bars">
+<div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="n">3/5</span></div>
+<div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+</div>
+</div>
+<div class="scol">
+<div class="stop"><span class="nm">France</span><span class="tot">40<small>/50</small></span></div>
+<div class="bars">
+<div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
+<div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="n">3/5</span></div>
+<div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
+<div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+</div>
+</div>
+<div class="scol">
+<div class="stop"><span class="nm">Spain</span><span class="tot">28<small>/50</small></span></div>
+<div class="bars">
+<div class="bar"><span class="bl">Regulatory hook</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
+<div class="bar"><span class="bl">Compliance proof</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
+<div class="bar"><span class="bl">Tier &amp; pricing clarity</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">Scope completeness</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">AI / Copilot</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="n">5/5</span></div>
+<div class="bar"><span class="bl">Customer voice</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
+<div class="bar"><span class="bl">Ecosystem depth</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="n">2/5</span></div>
+<div class="bar"><span class="bl">Localisation &amp; QA</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">Information architecture</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="n">4/5</span></div>
+<div class="bar"><span class="bl">Conversion clarity</span><span class="track"><span class="fill" style="width:20%"></span></span><span class="n">1/5</span></div>
+</div>
+</div>
+</div>
+<p class="tier-note">Portugal is not scored on a live page (none exists). The Portugal demo is assessed as a market-entry concept against this same standard.</p>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>The regulatory hook · per market</span><h2>Every page leads with its local clock</h2></div>
+<table class="matrix">
+<thead><tr><th style="width:120px">Market</th><th>The hook the page must lead with</th><th style="width:150px">Mechanism named</th></tr></thead>
+<tbody>
+<tr><td><b>France</b></td><td>Facture électronique B2B obligatoire — recevoir dès sept. 2026, émettre dès sept. 2027.</td><td>Plateforme agréée Sage</td></tr>
+<tr><td><b>Spain</b></td><td>VeriFactu (Ley Antifraude) + factura electrónica B2B (Crea y Crece).</td><td>VeriFactu / factura-e</td></tr>
+<tr><td><b>Germany</b></td><td>E-Rechnung — empfangen seit Jan 2025, Versand stufenweise danach.</td><td>ZUGFeRD / X-Rechnung · GoBD</td></tr>
+<tr><td><b>Portugal</b></td><td>Continuous: ATCUD/QR/SAF-T live; QES-on-PDF 2027; SAF-T accounting 2028.</td><td>SAF-T (PT) · certified (SVAT)</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="sec alt">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Consistency lock</span><h2>Language we hold the line on</h2></div>
+<div class="lock">
+<div class="lockrow"><span class="use">Use:</span> plateforme agréée (PA)  ·  <span class="avoid">Avoid:</span> PDP (now legacy)<div class="x">France e-invoicing transmission — the term changed; the page should reflect it.</div></div>
+<div class="lockrow"><span class="use">Use:</span> VeriFactu, factura electrónica  ·  <span class="avoid">Avoid:</span> vague "cumple la ley"<div class="x">Spain — name the mechanism, don't gesture at compliance.</div></div>
+<div class="lockrow"><span class="use">Use:</span> ZUGFeRD / X-Rechnung, GoBD-konform  ·  <span class="avoid">Avoid:</span> generic "E-Rechnung-ready"<div class="x">Germany — the formats are the proof points.</div></div>
+<div class="lockrow"><span class="use">Use:</span> ATCUD / SAF-T / certified (SVAT)  ·  <span class="avoid">Avoid:</span> implying a B2B "cliff"<div class="x">Portugal compliance is continuous, not a single deadline.</div></div>
+<div class="lockrow"><span class="use">Use:</span> accompanied transition / reprise  ·  <span class="avoid">Avoid:</span> "migration"<div class="x">Carried over from the accountant playbook — holds across all markets.</div></div>
+<div class="lockrow"><span class="use">Use:</span> one offer, one end-date  ·  <span class="avoid">Avoid:</span> contradictory promo copy<div class="x">Directly fixes the live Spain page.</div></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="head"><span class="eyebrow"><span class="dot"></span>Replication sequence</span><h2>How to roll this across the estate</h2></div>
+<table class="matrix">
+<thead><tr><th style="width:60px">Step</th><th>Move</th><th style="width:130px">When</th></tr></thead>
+<tbody>
+<tr><td><b>1</b></td><td>Fix Spain — resolve the promo contradiction and add the VeriFactu hook.</td><td><span class="pri now">Now</span></td></tr>
+<tr><td><b>2</b></td><td>Localise and de-typo the product screenshots across all markets.</td><td><span class="pri now">Now</span></td></tr>
+<tr><td><b>3</b></td><td>Add the e-invoicing hero spine to Spain and Germany (issuing).</td><td><span class="pri next">Next</span></td></tr>
+<tr><td><b>4</b></td><td>Lift France and Spain to Germany's depth — testimonials, ecosystem, IA.</td><td><span class="pri next">Next</span></td></tr>
+<tr><td><b>5</b></td><td>Decide Portugal — evolve Sage One or launch Active PT.</td><td><span class="pri then">Then</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
 </div><!-- /view-playbook -->
-
 </main>
-
 <footer>
-  <div class="wrap f-inner">
-    <div><b>WiSE · Active</b> — confidential demo hub. Concept product pages for France, Spain, Germany &amp; Portugal. Not for publication.</div>
-    <div>Winning in Small Europe · Sage Active relaunch</div>
-  </div>
+<div class="wrap f-inner">
+<div><b>WiSE · Active</b> — confidential demo hub. Concept product pages for France, Spain, Germany &amp; Portugal. Not for publication.</div>
+<div>Winning in Small Europe · Sage Active relaunch</div>
+</div>
 </footer>
-
 <script>
   const nav=document.getElementById('nav');
   const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>16);
@@ -1368,18 +1316,46 @@
   const subnav=document.getElementById('subnav');
   const neutralPromo='<b>WiSE · Active</b> — confidential review of the live Sage Active estate · FR · ES · DE · PT';
   let activeCountry='fr';
+  const promoTextEN={
+    fr:'Flash offer: <b>−50%</b> for the first 3 months on Sage Active · until 30/06/2026',
+    es:'Flash offer: <b>−50%</b> for the first 3 months on Sage Active · until 30/06/2026',
+    de:'Now <b>50% off</b> for 3 months on Sage Active · until 30.09.2026',
+    pt:'<b>Market-entry concept</b> · Sage Active not yet available in Portugal'
+  };
+  const ctaTextEN={fr:'Free trial',es:'Free trial',de:'Free trial',pt:'See the decision'};
+  const langName={fr:'Français',es:'Español',de:'Deutsch',pt:'Português'};
+  let lang='native';
+  function applyPromoCta(){
+    promo.innerHTML=(lang==='en'?promoTextEN:promoText)[activeCountry];
+    navcta.innerHTML=(lang==='en'?ctaTextEN:ctaText)[activeCountry]+' <span class="arr">\u2192</span>';
+  }
+  function updateLangBtn(){const b=document.getElementById('lt-native');if(b)b.textContent=langName[activeCountry];}
+  function applyLang(l){
+    lang=l;
+    document.querySelectorAll('.lt').forEach(b=>b.classList.toggle('active',b.dataset.l===l));
+    document.querySelectorAll('#view-demos [data-en]').forEach(el=>{
+      if(el.dataset.nv===undefined){el.dataset.nv=el.innerHTML;}
+      el.innerHTML=(l==='en')?el.getAttribute('data-en'):el.dataset.nv;
+    });
+    document.querySelectorAll('.panel').forEach(p=>{p.setAttribute('lang',l==='en'?'en':(p.dataset.nl||'en'));});
+    applyPromoCta();
+  }
 
   function applyCountry(c){
     activeCountry=c;
     document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.c===c));
     document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
     document.getElementById('panel-'+c).classList.add('active');
-    promo.innerHTML=promoText[c];
-    navcta.innerHTML=ctaText[c]+' <span class="arr">\u2192</span>';
+    updateLangBtn();
+    applyPromoCta();
   }
 
   document.querySelectorAll('.tab').forEach(tab=>{
     tab.addEventListener('click',()=>{applyCountry(tab.dataset.c);window.scrollTo({top:0,behavior:'smooth'});});
+  });
+
+  document.querySelectorAll('.lt').forEach(b=>{
+    b.addEventListener('click',()=>applyLang(b.dataset.l));
   });
 
   document.querySelectorAll('.ptab').forEach(pt=>{
@@ -1413,6 +1389,7 @@
     });
   }
   applyReveal(document.getElementById('view-demos'));
+  updateLangBtn();
 </script>
 </body>
 </html>
