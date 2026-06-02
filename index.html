@@ -434,6 +434,23 @@
   .lt:hover{color:var(--ink)}
   .lt.active{background:#fff;color:var(--green-900);box-shadow:var(--shadow)}
   @media(max-width:640px){ .subnav .wrap{gap:8px} .lt{padding:7px 11px;font-size:12.5px} }
+
+  /* === Premium hero imagery (uplift) === */
+  .hero-shot{position:relative;margin:0;transform:perspective(1600px)}
+  .hero-shot::before{content:"";position:absolute;inset:-10% -8% -14% -8%;z-index:-1;
+    background:radial-gradient(58% 58% at 72% 32%,rgba(0,214,57,.20),transparent 70%);filter:blur(8px)}
+  .hero-img{width:100%;height:auto;display:block;border-radius:20px;border:1px solid var(--line);
+    background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05),0 44px 88px -38px rgba(0,40,20,.46);
+    transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+  .hero-shot:hover .hero-img{transform:translateY(-4px);box-shadow:0 3px 10px rgba(0,0,0,.06),0 60px 110px -42px rgba(0,40,20,.55)}
+  .hero-band{padding:18px 0 70px;background:linear-gradient(180deg,var(--paper),var(--mint-soft) 160%)}
+  .band-shot{position:relative;margin:0 auto;max-width:1040px}
+  .band-shot::before{content:"";position:absolute;inset:-7% -5% -11% -5%;z-index:0;
+    background:radial-gradient(52% 60% at 50% 34%,rgba(0,214,57,.14),transparent 72%)}
+  .band-img{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:22px;
+    border:1px solid var(--line);background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,.05),0 54px 96px -42px rgba(0,40,20,.5)}
+  @media(max-width:940px){ .hero-band{padding:8px 0 52px} .hero-img,.band-img{border-radius:16px} }
 </style>
 </head>
 <body>
@@ -484,34 +501,7 @@
 </div>
 <p class="reassure anim d5" data-en="No commitment · Cancel anytime · &lt;b&gt;−50%&lt;/b&gt; for the first 3 months">Sans engagement · Résiliable à tout moment · <b>−50%</b> les 3 premiers mois</p>
 </div>
-<div aria-hidden="true" class="mock anim d3">
-<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Rechercher…</span><span class="app-ava">LV</span></div>
-<div class="app-body">
-<div class="app-rail">
-<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
-<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
-</div>
-<div class="app-main">
-<div class="app-h">Factures de vente <span class="app-cta">+ Facture</span></div>
-<div class="app-kpis">
-<div class="kpi"><span class="kl">Encaissé · 30j</span><span class="kv">12 480 €</span><span class="kd up">▲ 14%</span></div>
-<div class="kpi"><span class="kl">En attente</span><span class="kv">4 805 €</span><span class="kd down">2 échues</span></div>
-<div class="kpi"><span class="kl">Échéance 7j</span><span class="kv">3 fact.</span><span class="kd up">à relancer</span></div>
-</div>
-<div class="app-table">
-<div class="thead"><span>Client</span><span>Montant</span><span>Statut</span></div>
-<div class="doc-row"><span class="cust">Boulangerie Lévêque</span><span class="amt">1 240,00 €</span><span class="st paid">Payée</span></div>
-<div class="doc-row"><span class="cust">Atelier Mercier SARL</span><span class="amt">3 880,50 €</span><span class="st sent">Émise · e-facture</span></div>
-<div class="doc-row"><span class="cust">Cabinet Rousseau</span><span class="amt">925,00 €</span><span class="st draft">Brouillon</span></div>
-</div>
-<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>3 factures arrivent à échéance cette semaine. Voulez-vous relancer <b>Cabinet Rousseau</b> ?</span></div>
-</div>
-</div>
-</div>
+<figure class="hero-shot anim d3"><img alt="Sage Active — France" class="hero-img" data-en-src="Sage%20Active%20French%20Website%20Hero%20Image%20-%20English.png" decoding="async" loading="eager" src="Sage%20Active%20French%20Website%20Hero%20Image%20-%20French.png"/></figure>
 </div>
 </section>
 <section class="trust">
@@ -584,7 +574,7 @@
 </div>
 </div>
 </section>
-<section class="copilot">
+<section class="hero-band"><div class="wrap"><figure class="band-shot"><img alt="Sage Active — France" class="band-img" decoding="async" loading="lazy" src="Sage%20Active%20French%20Website%20bottom%20Hero%20Image.png"/></figure></div></section><section class="copilot">
 <div class="wrap copilot-grid">
 <div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Intelligence artificielle</span><h2 data-en="Sage Copilot, your trusted assistant">Sage Copilot, votre assistant de confiance</h2><p data-en="Always available to work with you, keep you informed and help you make better decisions. Included in Sage Active.">Toujours disponible pour travailler avec vous, vous tenir informé et vous aider à prendre de meilleures décisions. Inclus dans Sage Active.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Découvrir Sage Copilot <span class="arr">→</span></a></div></div>
 <div class="ai-card"><div class="q">Vous demandez :</div><div class="a">« Quelles factures sont en retard ? »</div><div class="q" style="margin-top:18px">Copilot répond :</div><div class="a">2 factures échues pour <b>4 805 €</b>. La plus ancienne — <b>Atelier Mercier</b> — date de 23 jours. Voulez-vous préparer les relances ?</div></div>
@@ -637,34 +627,7 @@
 <div class="chips anim d5"><span class="chip">VeriFactu</span><span class="chip">Ley Antifraude</span><span class="chip">Crea y Crece</span><span class="chip">Factura electrónica B2B</span></div>
 <p class="reassure anim d5" data-en="Add users or cancel at any time · &lt;b&gt;−50%&lt;/b&gt; for the first 3 months">Añade usuarios o cancela en cualquier momento · <b>−50%</b> los 3 primeros meses</p>
 </div>
-<div aria-hidden="true" class="mock anim d3">
-<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Buscar…</span><span class="app-ava">LV</span></div>
-<div class="app-body">
-<div class="app-rail">
-<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
-<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
-</div>
-<div class="app-main">
-<div class="app-h">Facturas de venta <span class="app-cta">+ Factura</span></div>
-<div class="app-kpis">
-<div class="kpi"><span class="kl">Cobrado · 30d</span><span class="kv">10 240 €</span><span class="kd up">▲ 9%</span></div>
-<div class="kpi"><span class="kl">Pendiente</span><span class="kv">5 200 €</span><span class="kd down">2 vencidas</span></div>
-<div class="kpi"><span class="kl">Vence 7d</span><span class="kv">3 fact.</span><span class="kd up">recordar</span></div>
-</div>
-<div class="app-table">
-<div class="thead"><span>Cliente</span><span>Importe</span><span>Estado</span></div>
-<div class="doc-row"><span class="cust">Talleres Belmonte SL</span><span class="amt">2 145,00 €</span><span class="st paid">Cobrada</span></div>
-<div class="doc-row"><span class="cust">Cerámicas Vega</span><span class="amt">4 320,50 €</span><span class="st sent">Emitida · VeriFactu</span></div>
-<div class="doc-row"><span class="cust">Gestoría Núñez</span><span class="amt">880,00 €</span><span class="st draft">Borrador</span></div>
-</div>
-<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>Tienes 2 facturas vencidas por <b>5 200 €</b>. ¿Quieres que prepare los recordatorios?</span></div>
-</div>
-</div>
-</div>
+<figure class="hero-shot anim d3"><img alt="Sage Active — Spain" class="hero-img" data-en-src="Sage%20Active%20Spain%20Website%20Hero%20Image%20-%20English.png" decoding="async" loading="eager" src="Sage%20Active%20Spain%20Website%20Hero%20Image%20-%20Spanish.png"/></figure>
 </div>
 </section>
 <section class="trust">
@@ -737,7 +700,7 @@
 </div>
 </div>
 </section>
-<section class="copilot">
+<section class="hero-band"><div class="wrap"><figure class="band-shot"><img alt="Sage Active — Spain" class="band-img" decoding="async" loading="lazy" src="Sage%20Active%20Spain%20Website%20bottom%20Hero%20Image.png"/></figure></div></section><section class="copilot">
 <div class="wrap copilot-grid">
 <div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Inteligencia artificial</span><h2 data-en="Sage Copilot, always by your side">Sage Copilot, siempre a tu lado</h2><p data-en="Available to work with you, keep you informed and help you make smarter decisions. Included in Sage Active.">Disponible para trabajar contigo, mantenerte informado y ayudarte a tomar decisiones más inteligentes. Incluido en Sage Active.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Descubre Sage Copilot <span class="arr">→</span></a></div></div>
 <div class="ai-card"><div class="q">Le preguntas:</div><div class="a">«¿Qué facturas están vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tienes 2 facturas vencidas por <b>5 200 €</b>. La más antigua — <b>Cerámicas Vega</b> — lleva 19 días. ¿Preparo los recordatorios?</div></div>
@@ -790,34 +753,7 @@
 <div class="chips anim d5"><span class="chip">ZUGFeRD</span><span class="chip">X-Rechnung</span><span class="chip">GoBD-konform</span><span class="chip">ELSTER</span><span class="chip">DATEV</span></div>
 <p class="reassure anim d5" data-en="Flexible term · no hidden costs · &lt;b&gt;50% off&lt;/b&gt; for 3 months">Flexible Laufzeit · keine versteckten Kosten · <b>50% Rabatt</b> für 3 Monate</p>
 </div>
-<div aria-hidden="true" class="mock anim d3">
-<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active</span><span class="app-search">Suchen…</span><span class="app-ava">LV</span></div>
-<div class="app-body">
-<div class="app-rail">
-<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
-<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
-</div>
-<div class="app-main">
-<div class="app-h">Verkaufsrechnungen <span class="app-cta">+ Rechnung</span></div>
-<div class="app-kpis">
-<div class="kpi"><span class="kl">Eingenommen · 30T</span><span class="kv">24 180 €</span><span class="kd up">▲ 11%</span></div>
-<div class="kpi"><span class="kl">Offen</span><span class="kv">3 340 €</span><span class="kd down">2 überfällig</span></div>
-<div class="kpi"><span class="kl">Fällig 7T</span><span class="kv">2 Rg.</span><span class="kd up">erinnern</span></div>
-</div>
-<div class="app-table">
-<div class="thead"><span>Kunde</span><span>Betrag</span><span>Status</span></div>
-<div class="doc-row"><span class="cust">Bocks OHG</span><span class="amt">10 513,65 €</span><span class="st paid">Gebucht</span></div>
-<div class="doc-row"><span class="cust">Mondo GmbH</span><span class="amt">6 158,25 €</span><span class="st sent">Versendet · E-Rechnung</span></div>
-<div class="doc-row"><span class="cust">Meier &amp; Co. KG</span><span class="amt">2 409,75 €</span><span class="st draft">Entwurf</span></div>
-</div>
-<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>2 Rechnungen sind überfällig (<b>3 340 €</b>). Soll ich Zahlungserinnerungen vorbereiten?</span></div>
-</div>
-</div>
-</div>
+<figure class="hero-shot anim d3"><img alt="Sage Active — Germany" class="hero-img" data-en-src="Sage%20Active%20German%20Website%20Hero%20Image%20-%20English.png" decoding="async" loading="eager" src="Sage%20Active%20German%20Website%20Hero%20Image%20-%20Germany.png"/></figure>
 </div>
 </section>
 <section class="trust">
@@ -890,7 +826,7 @@
 </div>
 </div>
 </section>
-<section class="copilot">
+<section class="hero-band"><div class="wrap"><figure class="band-shot"><img alt="Sage Active — Germany" class="band-img" decoding="async" loading="lazy" src="Sage%20Active%20German%20Website%20bottom%20Hero%20Image.png"/></figure></div></section><section class="copilot">
 <div class="wrap copilot-grid">
 <div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Künstliche Intelligenz</span><h2 data-en="Sage Copilot — always by your side">Sage Copilot — immer an Ihrer Seite</h2><p data-en="Keeps you informed and helps you make smarter decisions. Included in Sage Active free for a limited time.">Informiert Sie laufend und hilft Ihnen, smartere Entscheidungen zu treffen. Für kurze Zeit kostenlos in Sage Active enthalten.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Discover Sage Copilot &lt;span class="arr"&gt;→&lt;/span&gt;' href="#">Sage Copilot entdecken <span class="arr">→</span></a></div></div>
 <div class="ai-card"><div class="q">Sie fragen:</div><div class="a">„Welche Rechnungen sind überfällig?"</div><div class="q" style="margin-top:18px">Copilot antwortet:</div><div class="a">2 Rechnungen sind überfällig (<b>3 340 €</b>). Die älteste — <b>Meier &amp; Co. KG</b> — seit 21 Tagen. Soll ich Zahlungserinnerungen vorbereiten?</div></div>
@@ -949,34 +885,7 @@
 <div class="chips anim d5"><span class="chip">ATCUD</span><span class="chip">QR Code</span><span class="chip">SAF-T (PT)</span><span class="chip">Software certificado (SVAT)</span></div>
 <p class="reassure anim d5" data-en="Confidential concept · illustrative pricing · &lt;b&gt;not commercialised&lt;/b&gt;">Conceito confidencial · preços ilustrativos · <b>não comercializado</b></p>
 </div>
-<div aria-hidden="true" class="mock anim d3">
-<div class="app-top"><span class="dots"><i></i><i></i><i></i></span><span class="app-logo">Sage</span><span class="app-title">Active · conceito</span><span class="app-search">Pesquisar…</span><span class="app-ava">LV</span></div>
-<div class="app-body">
-<div class="app-rail">
-<span class="ri active"><svg viewbox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><path d="M3 9 12 4l9 5M4 9v11h16V9M9 20v-6h6v6"></path></svg></span>
-<span class="ri"><svg viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg></span>
-<span class="ri spark"><svg viewbox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"></path></svg></span>
-</div>
-<div class="app-main">
-<div class="app-h">Faturas de venda <span class="app-cta">+ Fatura</span></div>
-<div class="app-kpis">
-<div class="kpi"><span class="kl">Recebido · 30d</span><span class="kv">9 060 €</span><span class="kd up">▲ 8%</span></div>
-<div class="kpi"><span class="kl">Pendente</span><span class="kv">4 555 €</span><span class="kd down">2 vencidas</span></div>
-<div class="kpi"><span class="kl">Vence 7d</span><span class="kv">2 fat.</span><span class="kd up">lembrar</span></div>
-</div>
-<div class="app-table">
-<div class="thead"><span>Cliente</span><span>Valor</span><span>Estado</span></div>
-<div class="doc-row"><span class="cust">Padaria Almeida Lda</span><span class="amt">1 180,00 €</span><span class="st paid">Paga</span></div>
-<div class="doc-row"><span class="cust">Oficinas Sousa</span><span class="amt">3 640,00 €</span><span class="st sent">Emitida · ATCUD+QR</span></div>
-<div class="doc-row"><span class="cust">Gabinete Costa</span><span class="amt">915,00 €</span><span class="st draft">Rascunho</span></div>
-</div>
-<div class="ai"><span class="pill" data-en="Copilot">Copilot</span><span>2 faturas estão vencidas (<b>4 555 €</b>). Quer que prepare os lembretes?</span></div>
-</div>
-</div>
-</div>
+<figure class="hero-shot anim d3"><img alt="Sage Active — Portugal" class="hero-img" data-en-src="Sage%20Active%20Portugal%20Website%20Hero%20Image%20-%20English.png" decoding="async" loading="eager" src="Sage%20Active%20Portugal%20Website%20Hero%20Image%20-%20Portuguese.png"/></figure>
 </div>
 </section>
 <section class="trust">
@@ -1043,7 +952,7 @@
 </div>
 </div>
 </section>
-<section class="copilot">
+<section class="hero-band"><div class="wrap"><figure class="band-shot"><img alt="Sage Active — Portugal" class="band-img" decoding="async" loading="lazy" src="Sage%20Active%20Portugal%20Website%20bottom%20Hero%20Image.png"/></figure></div></section><section class="copilot">
 <div class="wrap copilot-grid">
 <div><span class="eyebrow on-dark" data-en='&lt;span class="dot"&gt;&lt;/span&gt;Artificial intelligence'><span class="dot"></span>Inteligência artificial</span><h2 data-en="Sage Copilot, always with you">Sage Copilot, sempre consigo</h2><p data-en="Available to work with you, keep you informed and help you make smarter decisions — adapted to the Portuguese reality.">Disponível para trabalhar consigo, mantê-lo informado e ajudá-lo a tomar decisões mais inteligentes — adaptado à realidade portuguesa.</p><div class="cta-row" style="margin-top:26px"><a class="btn btn-green" data-en='Review the decision &lt;span class="arr"&gt;→&lt;/span&gt;' href="#decision-pt">Rever a decisão <span class="arr">→</span></a></div></div>
 <div class="ai-card"><div class="q">Pergunta:</div><div class="a">«Que faturas estão vencidas?»</div><div class="q" style="margin-top:18px">Copilot responde:</div><div class="a">Tem 2 faturas vencidas no total de <b>4 555 €</b>. A mais antiga — <b>Oficinas Sousa</b> — há 17 dias. Preparo os lembretes?</div></div>
@@ -1338,6 +1247,10 @@
       el.innerHTML=(l==='en')?el.getAttribute('data-en'):el.dataset.nv;
     });
     document.querySelectorAll('.panel').forEach(p=>{p.setAttribute('lang',l==='en'?'en':(p.dataset.nl||'en'));});
+    document.querySelectorAll('#view-demos .hero-img[data-en-src]').forEach(img=>{
+      if(img.dataset.nvSrc===undefined){img.dataset.nvSrc=img.getAttribute('src');}
+      img.setAttribute('src',(l==='en')?img.getAttribute('data-en-src'):img.dataset.nvSrc);
+    });
     applyPromoCta();
   }
 
